@@ -426,14 +426,17 @@ body {
   background-repeat: no-repeat;
 }
 
-/* .her-sec11::after, .her-sec111::after {
+.her-sec11::after, .her-sec111::after {
   content: '';
   position: absolute;
-  inset: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
   background: linear-gradient(135deg, rgba(16, 91, 78, 0.75), rgba(0, 0, 0, 0.55));
   z-index: 1;
   pointer-events: none;
-} */
+}
 
 .her-sec1{
   background-image: url('https://res.cloudinary.com/dgif730br/image/upload/v1763964833/WhatsApp_Image_2025-11-24_at_11.25.21_AM_xey9fv.jpg');
