@@ -361,35 +361,6 @@ export default function Home() {
 
         <div className="hero-slider" ref={heroSliderRef}>
           <div className="hero-slider-track">
-            {/* Slide 1 */}
-            <section className="hero-section">
-              <div className="hero-container">
-                <div className="hero-content">
-                  <p className="hero-tagline">Speed. Skill. Assurance</p>
-                  
-                  <h1 className="hero-title">
-                    Exceptional Quality, performance & sustainability
-                </h1>
-                  
-                  <p className="hero-description">
-                    We manufacture high-performance chemical solutions tailored for the{' '}
-                    <strong>rubber and plastic industries</strong> — ensuring exceptional adhesion, 
-                    durability, and compliance.
-                  </p>
-                  
-                  <div className="hero-buttons">
-                    <Link href="/enquiry" className="btn-primary">
-                      Enquire Now
-                      <span className="btn-arrow">→</span>
-                    </Link>
-                    <Link href="/products" className="btn-secondary">
-                      View Products
-                      <span className="btn-arrow">→</span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </section>
 
             {/* Slide 2 */}
             <section className="hero-section her-sec1">
@@ -421,8 +392,41 @@ export default function Home() {
               </div>
             </section>
 
+
+            {/* Slide 1 */}
+            <section className="hero-section her-sec11">
+              <div className="hero-container">
+                <div className="hero-content">
+                  <p className="hero-tagline">Speed. Skill. Assurance</p>
+                  
+                  <h1 className="hero-title">
+                    Exceptional Quality, performance & sustainability
+                </h1>
+                  
+                  <p className="hero-description">
+                    We manufacture high-performance chemical solutions tailored for the{' '}
+                    <strong>rubber and plastic industries</strong> — ensuring exceptional adhesion, 
+                    durability, and compliance.
+                  </p>
+                  
+                  <div className="hero-buttons">
+                    <Link href="/enquiry" className="btn-primary">
+                      Enquire Now
+                      <span className="btn-arrow">→</span>
+                    </Link>
+                    <Link href="/products" className="btn-secondary">
+                      View Products
+                      <span className="btn-arrow">→</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            
+
             {/* Slide 3 */}
-            <section className="hero-section">
+            <section className="hero-section her-sec111">
               <div className="hero-container">
                 <div className="hero-content">
                   <p className="hero-tagline">Speed. Skill. Assurance</p>
@@ -480,37 +484,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* About Section with Hover Effect */}
-      <section className="about-section">
-        <div className="about_sect">
-        {/* Left Side - Image with Hover Overlay */}
-        <div className="about-image-container">
-          <div className="about-overlay">
-            <div className="about-overlay-content">
-              <p>
-                Auropol is a leading manufacturer of specialty chemicals for rubber 
-                and plastic industries. With emphasis on quality and innovative 
-                product development, Auropol aims to become the preferred supplier 
-                by remaining alert to customer's changing needs and responding 
-                with speed, skill and assurance.
-              </p>
-              <Link href="/about" className="btn-know-more">
-                Know More
-                <span>→</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Right Side - Teal Panel with Title */}
-        <div className="about-content-panel">
-          <p className="about-panel-tagline">Speed. Skill. Assurance</p>
-          <h2 className="about-panel-title">
-            The ultimate source for specialty chemicals
-          </h2>
-        </div>
-        </div>
-      </section>
+     
 
       {/* Quality Section */}
       <section className="quality-section">
@@ -1064,6 +1038,37 @@ export default function Home() {
           <p>Website Design & Developed by <a href="#" target="_blank" rel="noopener noreferrer">Thinktech Software</a></p>
         </div>
       </footer> */}
+       {/* About Section with Hover Effect */}
+       <section className="about-section">
+        <div className="about_sect">
+        {/* Left Side - Image with Hover Overlay */}
+        <div className="about-image-container">
+          <div className="about-overlay">
+            <div className="about-overlay-content">
+              <p>
+                Auropol is a leading manufacturer of specialty chemicals for rubber 
+                and plastic industries. With emphasis on quality and innovative 
+                product development, Auropol aims to become the preferred supplier 
+                by remaining alert to customer's changing needs and responding 
+                with speed, skill and assurance.
+              </p>
+              <Link href="/about" className="btn-know-more">
+                Know More
+                <span>→</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Side - Teal Panel with Title */}
+        <div className="about-content-panel">
+          <p className="about-panel-tagline">Speed. Skill. Assurance</p>
+          <h2 className="about-panel-title">
+            The ultimate source for specialty chemicals
+          </h2>
+        </div>
+        </div>
+      </section>
       <Footer/>
     </div>
   );

@@ -3,7 +3,7 @@
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
-const rubberProducts = [
+export const rubberProducts = [
   { slug: 'single-component-bonding-agent', name: 'Single Component Bonding Agent', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392803/unsplash_x8ZStukS2PM_1_flkza9.svg', category: 'rubber' },
   { slug: 'two-component-bonding-agent', name: 'Two Component Bonding Agent', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763393226/unsplash_x8ZStukS2PM_15_oecjh1.svg', category: 'rubber' },
   { slug: 'peroxide-co-agent', name: 'Peroxide Co Agent', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392804/unsplash_x8ZStukS2PM_2_idqnag.svg', category: 'rubber' },
@@ -20,7 +20,7 @@ const rubberProducts = [
   { slug: 'smoke-suppressant', name: 'Smoke Suppressant', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392861/unsplash_x8ZStukS2PM_13_xg94ad.svg', category: 'rubber' }
 ];
 
-const plasticProducts = [
+export const plasticProducts = [
   { slug: 'multifunctional-process-aids', name: 'Multifunctional Process Aids', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452039/product-pic13-big_pfk4mr.jpg', category: 'plastic' },
   { slug: 'process-aids-vinyl', name: 'Process Aids for Vinyl compounds', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452039/product-pic18_exrhdn.jpg', category: 'plastic' },
   { slug: 'antiblock-additive', name: 'Antiblock Additive', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452039/antiblock_eyewow.jpg', category: 'plastic' },

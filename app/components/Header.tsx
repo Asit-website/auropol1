@@ -1,10 +1,27 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
+import { rubberProducts, plasticProducts } from './ProductsContent';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const rubberProductsMenu = useMemo(
+    () => rubberProducts.map((product) => ({
+      label: product.name,
+      href: `/products/${product.slug}`
+    })),
+    []
+  );
+
+  const plasticProductsMenu = useMemo(
+    () => plasticProducts.map((product) => ({
+      label: product.name,
+      href: `/products/${product.slug}`
+    })),
+    []
+  );
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -26,15 +43,38 @@ export default function Header() {
           <Link href="/" className="nav-link">Home</Link>
           <Link href="/about" className="nav-link">About Us</Link>
           <div className="nav-item nav-dropdown">
-            <Link href="/products" className="nav-link">
+            <button className="nav-link nav-dropdown-toggle">
               Products
               <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-            </Link>
+            </button>
             <div className="dropdown-menu">
-              <Link href="/products?category=rubber" className="dropdown-item">Specialty Rubber Chemicals</Link>
-              <Link href="/products?category=plastic" className="dropdown-item">Plastic Additives</Link>
+              <div className="dropdown-column">
+                <div className="dropdown-column-header">
+                  <span>Specialty Rubber Chemicals</span>
+                </div>
+                <div className="dropdown-list">
+                  {rubberProductsMenu.map((item) => (
+                    <Link key={item.href} href={item.href} className="dropdown-link">
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <div className="dropdown-column">
+                <div className="dropdown-column-header">
+                  <span>Plastic Additives</span>
+                </div>
+                <div className="dropdown-list">
+                  {plasticProductsMenu.map((item) => (
+                    <Link key={item.href} href={item.href} className="dropdown-link">
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
           <Link href="/rd-technology" className="nav-link">R & D Technology</Link>
@@ -74,7 +114,21 @@ export default function Header() {
               <span className="mobile-nav-link">Products</span>
               <div className="mobile-dropdown">
                 <Link href="/products?category=rubber" className="mobile-dropdown-item" onClick={closeMenu}>Specialty Rubber Chemicals</Link>
+                <div className="mobile-sublist">
+                  {rubberProductsMenu.map((item) => (
+                    <Link key={item.href} href={item.href} className="mobile-dropdown-item sub-item" onClick={closeMenu}>
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
                 <Link href="/products?category=plastic" className="mobile-dropdown-item" onClick={closeMenu}>Plastic Additives</Link>
+                <div className="mobile-sublist">
+                  {plasticProductsMenu.map((item) => (
+                    <Link key={item.href} href={item.href} className="mobile-dropdown-item sub-item" onClick={closeMenu}>
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
             <Link href="/rd-technology" className="mobile-nav-link" onClick={closeMenu}>R & D Technology</Link>
