@@ -426,7 +426,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.her-sec11::after, .her-sec111::after {
+/* .her-sec11::after, .her-sec111::after {
   content: '';
   position: absolute;
   left: 0;
@@ -436,7 +436,7 @@ body {
   background: linear-gradient(135deg, rgba(16, 91, 78, 0.75), rgba(0, 0, 0, 0.55));
   z-index: 1;
   pointer-events: none;
-}
+} */
 
 .her-sec1{
   background-image: url('https://res.cloudinary.com/dgif730br/image/upload/v1763964833/WhatsApp_Image_2025-11-24_at_11.25.21_AM_xey9fv.jpg');
@@ -446,6 +446,18 @@ body {
 }
 .her-sec111{
   background-image: url('https://res.cloudinary.com/dgif730br/image/upload/v1764058839/WhatsApp_Image_2025-11-25_at_11.38.14_AM_1_xfjgmu.jpg');
+}
+.her-sec11 .hero-sky-label{
+  position: absolute;
+  top: -11rem;
+  right: 120px;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .hero-container {
   max-width: 1400px;
@@ -461,7 +473,9 @@ body {
   color: white;
   margin-top: 40px;
 }
-
+.hero-sec111 .hero-content{
+  color: black;
+}
 .hero-tagline {
   font-size: 16px;
   font-weight: 400;
@@ -472,13 +486,17 @@ body {
   gap: 0.5rem;
    font-family: "Roboto", sans-serif !important;
 }
-
+.her-sec111 .hero-tagline{
+  color: black;
+}
 .hero-tagline::before {
   content: '●';
   font-size: 0.75rem;
   color: #7ee3d7;
 }
-
+.her-sec111 .hero-tagline::before{
+  color: black;
+}
 .hero-title {
   font-size: 40px;
   font-weight: 700;
@@ -486,7 +504,12 @@ body {
   margin-bottom: 2rem;
   font-family: "Roboto", sans-serif !important;
 }
-
+.her-sec111 .hero-title{
+  color: black;
+}
+.her-sec111 .hero-description{
+  color: black;
+}
 .hero-description {
   font-size: 18px;
   line-height: 27px;
@@ -495,7 +518,9 @@ body {
   font-weight: 400;
    font-family: "Roboto", sans-serif !important;
 }
-
+.her-sec111 .hero-description strong{
+  color: black;
+}
 .hero-description strong {
   color: white;
   font-weight: 600;

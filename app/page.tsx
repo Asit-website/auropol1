@@ -383,10 +383,10 @@ export default function Home() {
                       Enquire Now
                       <span className="btn-arrow">→</span>
                     </Link>
-                    <Link href="/products" className="btn-secondary">
+                    {/* <Link href="/products" className="btn-secondary">
                       View Products
                       <span className="btn-arrow">→</span>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -396,7 +396,8 @@ export default function Home() {
             {/* Slide 1 */}
             <section className="hero-section her-sec11">
               <div className="hero-container">
-                <div className="hero-content">
+                <p className="hero-sky-label">Plastic Additives</p>
+                {/* <div className="hero-content">
                   <p className="hero-tagline">Speed. Skill. Assurance</p>
                   
                   <h1 className="hero-title">
@@ -419,7 +420,7 @@ export default function Home() {
                       <span className="btn-arrow">→</span>
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </div>
             </section>
 
@@ -446,10 +447,10 @@ export default function Home() {
                       Enquire Now
                       <span className="btn-arrow">→</span>
                     </Link>
-                    <Link href="/products" className="btn-secondary">
+                    {/* <Link href="/products" className="btn-secondary">
                       View Products
                       <span className="btn-arrow">→</span>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
