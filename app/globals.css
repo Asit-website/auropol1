@@ -1929,7 +1929,7 @@ body {
 .quality-image-container {
   position: relative;
   flex: 0.9;
-  background: url('https://res.cloudinary.com/dgif730br/image/upload/v1763188957/unsplash_2PJMDIgK9EA_beo2ia.svg') center/cover no-repeat;
+  background: url('./images//WhatsApp\ Image\ 2025-11-26\ at\ 4.34.22\ PM.jpeg') center/cover no-repeat;
   overflow: hidden;
 }
 
