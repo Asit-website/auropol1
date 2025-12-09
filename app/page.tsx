@@ -632,14 +632,18 @@ export default function Home() {
                     const imageSrc = productData?.image as string | undefined;
 
                     return (
-                      <div className="product-card" key={`${slideIndex}-${product.name}`}>
+                      <Link
+                        href={`/products/${product.slug}`}
+                        className="product-card"
+                        key={`${slideIndex}-${product.name}`}
+                      >
                         <div className="product-card-imagess">
                           {imageSrc && (
                             <img src={imageSrc} alt={product.name} />
                           )}
                         </div>
                         <p className="product-card-name">{product.name}</p>
-                      </div>
+                      </Link>
                     );
                   })}
                 </div>
