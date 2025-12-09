@@ -4,7 +4,48 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-
+import R50SImage from '../../images/R 50(S).jpeg';
+import R80SImage from '../../images/R 80(S).jpeg';
+import RD20Image from '../../images/RD 20.jpeg';
+import RDISImage from '../../images/RD I(S).jpeg';
+import RDIImage from '../../images/RD I.jpeg';
+import RD22Image from '../../images/RD22.jpeg';
+import Img6860 from '../../images/6860.jpeg';
+import Img6866 from '../../images/6866.jpeg';
+import S560Image from '../../images/S560.jpeg';
+import AurosapPasteImage from '../../images/Aurosap Paste.jpg';
+import Img202_1 from '../../images/202-1.jpeg';
+import Img209 from '../../images/209.jpeg';
+import ImgBP205_1 from '../../images/BP 205-1.jpeg';
+import Img40 from '../../images/40.jpeg';
+import Img60 from '../../images/60.png';
+import IBN from '../../images/250.jpeg';
+import FlameImage from '../../images/Flame retardant.jpeg';
+import FRM920Image from '../../images/FRM 920.jpeg';
+import ibn1 from '../../images/AR 262.jpg';
+import Img212 from '../../images/212.jpeg';
+import Img216 from '../../images/216.jpg';
+import Img222 from '../../images/222.jpeg';
+import Img244 from '../../images/244.jpeg';
+import SD255Image from '../../images/SD 255.jpeg';
+import SD255_2Image from '../../images/SD 255 (2).jpeg';
+import Img1028 from '../../images/1028.jpeg';
+import Img1028_2 from '../../images/1028 (2).jpeg';
+import Img300 from '../../images/300.jpg';
+import Img344 from '../../images/344.jpeg';
+import Img340 from '../../images/340.jpeg';
+import Img825 from '../../images/825.jpg';
+import Img825_2 from '../../images/825(2).jpg';
+import sd from '../../images/sd.jpeg';
+import ibn2 from '../../images/905.jpeg';
+import Img320 from '../../images/320.jpeg';
+import Img322 from '../../images/322.jpeg';
+import ImgSE362 from '../../images/SE-362.jpeg';
+import ImgAR262_2 from '../../images/AR 262(2).jpeg';
+import ibn3 from '../../images/315C.jpeg';
+import ibn4 from '../../images/AL 335.jpeg';
+import ibn5 from '../../images/345.jpeg';
+import ibn6 from '../../images/96MB.jpeg';
 // Sample product data - in a real app, this would come from a database or API
 const productsData = {
   'single-component-bonding-agent': {
@@ -87,7 +128,7 @@ const productsData = {
   'physical-modifiers': {
     title: 'Physical Peptizer',
     subheading: 'Auroaid 250',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392802/unsplash_x8ZStukS2PM_5_jhmms9.svg',
+    image: IBN.src,
     description: 'A unique physical peptizer for natural and polyisoprene rubber, the processibility of the compound is noticeably improved without lowering the molecular weight as chemical peptizers do.',
     specification: 'Tailors physical characteristics to meet specific application requirements.',
     advantages: [
@@ -130,7 +171,8 @@ const productsData = {
   'anti-abrasion': {
     title: 'Anti-Abrasion Additive',
     subheading: 'Auroaid AR 262',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392803/unsplash_x8ZStukS2PM_7_jnqkaw.svg',
+    // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392803/unsplash_x8ZStukS2PM_7_jnqkaw.svg',
+    image:ibn1.src,
     description: 'It is an efficient anti-abrasion additive for rubber compound, used in tyre, conveyor belt, rubber shoe sole, etc.',
     specification: 'Significantly improves wear resistance and service life.',
     advantages: [
@@ -245,7 +287,8 @@ const productsData = {
   'antistatic-agent': {
     title: 'Antistatic Agent',
     subheading: 'Auroaid AS 355',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392862/unsplash_x8ZStukS2PM_12_zhr7mu.svg',
+    // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392862/unsplash_x8ZStukS2PM_12_zhr7mu.svg',
+    image: sd.src,
     description: 'Auroaid AS 355 eliminates buildup of static electric charge on the surface of finished products .The static electricity needs to be dispersed to avoid problems such as sparking or dust attraction.',
     advantages: [
       'Minimizes risk of electrical discharge that may cause fire or explosion',
@@ -256,7 +299,8 @@ const productsData = {
   'smoke-suppressant': {
     title: 'Smoke Suppressant',
     subheading: 'Aurogaurd 905',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392861/unsplash_x8ZStukS2PM_13_xg94ad.svg',
+    // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392861/unsplash_x8ZStukS2PM_13_xg94ad.svg',
+    image: ibn2.src,
     description: 'Aurogaurd 905 is a unique smoke suppressant for both halogenated and non halogenated polymers. It acts efficiently in making Fire Resistant Low Smoke (FRLS) compound from a non-halogenated polymer when used in combination with Antimony Trioxide (Sb₂O₃) and trace of halogenated additives. Aurogaurd 905 also reduces the hazard from generation of smoke, toxic and corrosive fumes and does not impair any physical properties.',
     advantages: [
       'Lowering surface spread on exposure',
@@ -333,7 +377,8 @@ const productsData = {
   'antiblock-additive': {
     title: 'Antiblock Additive',
     subheading: 'Auroaid 315C',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452039/antiblock_eyewow.jpg',
+    // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452039/antiblock_eyewow.jpg',
+    image: ibn3.src,
     description: 'Auroaid 315C is an amide based external lubricant and excellent antiblocking agent for plastic processing. It also improves flow and surface finish.',
     advantages: [
       'ABS /Polystyrene : Improves flow and mould release properties.',
@@ -345,7 +390,8 @@ const productsData = {
   'dispersing-wetting-agent': {
     title: 'Dispersing & Wetting Agent',
     subheading: 'Auroaid AL 335',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452038/dispersing_wetting_pspy8c.jpg',
+    // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452038/dispersing_wetting_pspy8c.jpg',
+    image: ibn4.src,
     description: 'Auroaid AL335 is a dispersing & wetting agent for highly filled carbon black & inorganic filler based compounds without added gel.',
     advantages: [
       'Readily dispersed in the compound without added gel',
@@ -358,7 +404,8 @@ const productsData = {
   'dispersing-additive-anti-fibrillation': {
     title: 'Dispersing Additive for Anti-fibrillation',
     subheading: 'Auroaid 345',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452037/product-pic40_wyrbov.jpg',
+    // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452037/product-pic40_wyrbov.jpg',
+    image: ibn5.src,
     description: 'Auroaid 345 is a unique dispersing additive for Anti-fibrillation master batches & compounds for reducing water carry over on tape line during high speed operation and thus increases gloss and strength of the tape.',
     advantages: [
       'Reduces water carry over on tape line during high speed operation',
@@ -371,7 +418,8 @@ const productsData = {
   'plastic-smoke-suppressant': {
     title: 'Smoke Suppressant',
     subheading: 'Aurogaurd 905',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392861/unsplash_x8ZStukS2PM_13_xg94ad.svg',
+    // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392861/unsplash_x8ZStukS2PM_13_xg94ad.svg',
+    image: ibn2.src,
     description: 'Aurogaurd 905 lowers the generation of smoke and toxic fumes for fire resistant PVC, CSP and EPDM compounds',
     advantages: [
       'To reduce the smoke generation',
@@ -382,7 +430,8 @@ const productsData = {
   },
   'polymer-processing-additives': {
     title: 'Polymer Processing Additives ( PPA)',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452039/ppa_f5gzqm.jpg',
+    // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452039/ppa_f5gzqm.jpg',
+    image:ibn6.src,
     productVariants: [
       {
         subheading: 'Auroaid 90 MB',
@@ -506,7 +555,7 @@ const productsData = {
   'plastic-antistatic-agent': {
     title: 'Antistatic Agent',
     subheading: 'Auroaid AS 355',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452037/antistatic_agent_t36xro.jpg',
+    image: sd.src,
     description: 'Auroaid AS 355 eliminates static electric charge on the surface of finished products. The static electricity needs to be dissipated to avoid problems such as sparking or dust accumulation.',
     advantages: [
       'Minimizes risk of static electric charge that may cause fire or explosion',
@@ -574,11 +623,11 @@ export default function ProductDetailPage() {
         <div className="product-detail-breadcrumb">
           <Link href="/">Home</Link>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-          <Link style={{color:"white"}} href={`/products?category=${currentCategory}`}>Products</Link>
+          <Link style={{ color: "white" }} href={`/products?category=${currentCategory}`}>Products</Link>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <span>{categoryTitle}</span>
         </div>
@@ -591,7 +640,95 @@ export default function ProductDetailPage() {
           {/* Left Side - Product Image and Details */}
           <div className="product-detail-left">
             <div className="product-detail-image-container">
-              <img src={product.image} alt={product.title} />
+              {slug === 'single-component-bonding-agent' ? (
+                <div className='gall_img'>
+                  <img src={Img825.src} alt="Single Component Bonding Agent - 825" className="product-lab-gallery-image" />
+                  <img src={Img825_2.src} alt="Single Component Bonding Agent - 825 (2)" className="product-lab-gallery-image" />
+                </div>
+              ) : slug === 'two-component-bonding-agent' ? (
+                <div className='gall_img'>
+                  <img src={R50SImage.src} alt="Aurobond R50(S) - Modified Resorcinol dipping agent" className="product-lab-gallery-image" />
+                  <img src={R80SImage.src} alt="Aurobond R80(S) - Resorcinol Rubber Masterbatch" className="product-lab-gallery-image" />
+
+                  <img src={RD20Image.src} alt="Aurobond RD 20 - Resorcinol Formaldehyde Resin" className="product-lab-gallery-image" />
+
+                  <img src={RDISImage.src} alt="Aurobond RD I(S) - Modified Resorcinol & inert carrier" className="product-lab-gallery-image" />
+
+                  <img src={RDIImage.src} alt="Aurobond RD I - Resorcinol Filler Masterbatch" className="product-lab-gallery-image" />
+
+                  <img src={RD22Image.src} alt="Aurobond RD22 - Modified Resorcinol Formaldehyde Resin" className="product-lab-gallery-image" />
+                </div>
+              ) : slug === 'peroxide-co-agent' ? (
+                <div className='gall_img'>
+                  <img src={Img6860.src} alt="Peroxide Co Agent - Image 1" className="product-lab-gallery-image" />
+                  <img src={Img6866.src} alt="Peroxide Co Agent - Image 2" className="product-lab-gallery-image" />
+                </div>
+              ) : slug === 'plastic-peroxide-co-agent' ? (
+                <div className='gall_img'>
+                  <img src={Img6860.src} alt="Peroxide Co Agent - Image 1" className="product-lab-gallery-image" />
+                  <img src={Img6866.src} alt="Peroxide Co Agent - Image 2" className="product-lab-gallery-image" />
+                </div>
+              ) : slug === 'flame' ? (
+                <div className='gall_img'>
+                  <img src={FlameImage.src} alt="Flame Retardant" className="product-lab-gallery-image" />
+                  <img src={FRM920Image.src} alt="FRM 920" className="product-lab-gallery-image" />
+                </div>
+              ) : slug === 'antisticking-agent' ? (
+                <div className='gall_img'>
+                  <img src={S560Image.src} alt="Antisticking Agent - S560" className="product-lab-gallery-image" />
+                  <img src={AurosapPasteImage.src} alt="Antisticking Agent - Aurosap Paste" className="product-lab-gallery-image" />
+                </div>
+              ) : slug === 'tackifying-agent' ? (
+                <div className='gall_img'>
+                  <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" />
+                  <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" />
+                </div>
+              ) : slug === 'dispersing-processing-additives' ? (
+                <div className='gall_img'>
+                  <img src={Img212.src} alt="Dispersing & Processing Additives - 212" className="product-lab-gallery-image" />
+                  <img src={Img216.src} alt="Dispersing & Processing Additives - 216" className="product-lab-gallery-image" />
+                  <img src={Img222.src} alt="Dispersing & Processing Additives - 222" className="product-lab-gallery-image" />
+                  <img src={Img244.src} alt="Dispersing & Processing Additives - 244" className="product-lab-gallery-image" />
+                </div>
+              ) : slug === 'desiccant-agent-silica' ? (
+                <div className='gall_img'>
+                  <img src={SD255Image.src} alt="Auroaid SD 255" className="product-lab-gallery-image" />
+                  <img src={SD255_2Image.src} alt="Auroaid SD 255 - Variant" className="product-lab-gallery-image" />
+                </div>
+              ) : slug === 'desiccant-rubber' ? (
+                <div className='gall_img'>
+                  <img src={Img1028.src} alt="Desiccant for Rubber - 1028" className="product-lab-gallery-image" />
+                  <img src={Img1028_2.src} alt="Desiccant for Rubber - 1028 Variant" className="product-lab-gallery-image" />
+                </div>
+              ) : slug === 'multifunctional-process-aids' ? (
+                <div className='gall_img'>
+                  <img src={Img300.src} alt="Multifunctional Process Aids - 300" className="product-lab-gallery-image" />
+                  <img src={Img344.src} alt="Multifunctional Process Aids - 344" className="product-lab-gallery-image" />
+                </div>
+              ) : slug === 'process-aids-vinyl' ? (
+                <div className='gall_img'>
+                  <img src={Img320.src} alt="Process Aids for Vinyl - 320" className="product-lab-gallery-image" />
+                  <img src={Img322.src} alt="Process Aids for Vinyl - 322" className="product-lab-gallery-image" />
+                </div>
+              ) : slug === 'plastic-anti-abrasion' ? (
+                <div className='gall_img'>
+                  <img src={ImgSE362.src} alt="Plastic Anti-Abrasion - SE 362" className="product-lab-gallery-image" />
+                  <img src={ImgAR262_2.src} alt="Plastic Anti-Abrasion - AR 262" className="product-lab-gallery-image" />
+                </div>
+              ) : slug === 'processing-dispersing-additives' ? (
+                <div className='gall_img'>
+                  <img src={Img340.src} alt="Processing & Dispersing Additives - 340" className="product-lab-gallery-image" />
+                  <img src={SD255Image.src} alt="Processing & Dispersing Additives - SD 255" className="product-lab-gallery-image" />
+                </div>
+              ) : slug === 'homogenizing-agent' ? (
+                <div className='gall_img'>
+                  <img src={Img40.src} alt="Homogenizing Agent - 40" className="product-lab-gallery-image" />
+                  <img src={Img60.src} alt="Homogenizing Agent - 60" className="product-lab-gallery-image" />
+                </div>
+              ) : (
+                <img src={product.image} alt={product.title} />
+              )}
             </div>
 
             {'subheading' in product && (
@@ -682,55 +819,55 @@ export default function ProductDetailPage() {
                 {slug !== 'two-component-bonding-agent' && slug !== 'flame' && slug !== 'plastic-flame-retardants' && (
                   <h2 className="product-section-heading">Advantages</h2>
                 )}
-              {'productGroups' in product ? (
-                <div className="product-groups-container">
-                  {product.productGroups.map((group: any, groupIndex: number) => (
-                    <div key={groupIndex} className="product-group-section">
-                      <h2 style={{ fontSize: '32px', fontWeight: '700', color: '#000000', fontFamily: 'IBM Plex Mono, sans-serif', fontStyle: 'italic', marginBottom: '20px' }}>
-                        {group.subheading}
-                      </h2>
-                      <p style={{ fontSize: '18px', lineHeight: '26px', color: '#000000', fontFamily: 'IBM Plex Mono, sans-serif', marginBottom: '20px' }}>
-                        {group.description}
-                      </p>
-                      {group.application && (
-                        <div style={{ marginBottom: '30px', paddingBottom: '30px', borderBottom: '1.5px solid rgb(16, 91, 78)' }}>
-                          <h3 className="product-section-heading">Application</h3>
-                          <p style={{ fontSize: '18px', lineHeight: '26px', color: '#000000', fontFamily: 'IBM Plex Mono, sans-serif' }}>
-                            {group.application}
-                          </p>
+                {'productGroups' in product ? (
+                  <div className="product-groups-container">
+                    {product.productGroups.map((group: any, groupIndex: number) => (
+                      <div key={groupIndex} className="product-group-section">
+                        <h2 style={{ fontSize: '32px', fontWeight: '700', color: '#000000', fontFamily: 'IBM Plex Mono, sans-serif', fontStyle: 'italic', marginBottom: '20px' }}>
+                          {group.subheading}
+                        </h2>
+                        <p style={{ fontSize: '18px', lineHeight: '26px', color: '#000000', fontFamily: 'IBM Plex Mono, sans-serif', marginBottom: '20px' }}>
+                          {group.description}
+                        </p>
+                        {group.application && (
+                          <div style={{ marginBottom: '30px', paddingBottom: '30px', borderBottom: '1.5px solid rgb(16, 91, 78)' }}>
+                            <h3 className="product-section-heading">Application</h3>
+                            <p style={{ fontSize: '18px', lineHeight: '26px', color: '#000000', fontFamily: 'IBM Plex Mono, sans-serif' }}>
+                              {group.application}
+                            </p>
+                          </div>
+                        )}
+                        <div style={{ marginBottom: '30px', paddingBottom: '30px', borderBottom: groupIndex < product.productGroups.length - 1 ? '1.5px solid rgb(16, 91, 78)' : 'none' }}>
+                          <h3 className="product-section-heading">Advantages</h3>
+                          <ul className="product-list-arrows">
+                            {group.advantages.map((advantage: string, advIndex: number) => (
+                              <li key={advIndex}>{advantage}</li>
+                            ))}
+                          </ul>
                         </div>
-                      )}
-                      <div style={{ marginBottom: '30px', paddingBottom: '30px', borderBottom: groupIndex < product.productGroups.length - 1 ? '1.5px solid rgb(16, 91, 78)' : 'none' }}>
-                        <h3 className="product-section-heading">Advantages</h3>
-                        <ul className="product-list-arrows">
-                          {group.advantages.map((advantage: string, advIndex: number) => (
-                            <li key={advIndex}>{advantage}</li>
+                      </div>
+                    ))}
+                  </div>
+                ) : 'advantageGroups' in product ? (
+                  <div className="product-advantage-groups">
+                    {product.advantageGroups.map((group: any, groupIndex: number) => (
+                      <div key={groupIndex} className="advantage-group">
+                        <h3 className="advantage-group-heading">{group.heading}</h3>
+                        <ul className="advantage-group-items">
+                          {group.items.map((item: string, itemIndex: number) => (
+                            <li key={itemIndex}>{item}</li>
                           ))}
                         </ul>
                       </div>
-                    </div>
-                  ))}
-                </div>
-              ) : 'advantageGroups' in product ? (
-                <div className="product-advantage-groups">
-                  {product.advantageGroups.map((group: any, groupIndex: number) => (
-                    <div key={groupIndex} className="advantage-group">
-                      <h3 className="advantage-group-heading">{group.heading}</h3>
-                      <ul className="advantage-group-items">
-                        {group.items.map((item: string, itemIndex: number) => (
-                          <li key={itemIndex}>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <ul className="product-advantages">
-                  {'advantages' in product && product.advantages?.map((advantage: string, index: number) => (
-                    <li key={index}>{advantage}</li>
-                  ))}
-                </ul>
-              )}
+                    ))}
+                  </div>
+                ) : (
+                  <ul className="product-advantages">
+                    {'advantages' in product && product.advantages?.map((advantage: string, index: number) => (
+                      <li key={index}>{advantage}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
             )}
 
@@ -751,7 +888,7 @@ export default function ProductDetailPage() {
                     <button className="btn-download">
                       Download Brochure
                       <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56"/>
+                        <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56" />
                       </svg>
                     </button>
                   </div>
@@ -764,7 +901,7 @@ export default function ProductDetailPage() {
                 <Link href="/enquiry" className="btn-query">
                   Enquire Now
                   <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#105B4E"/>
+                    <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#105B4E" />
                   </svg>
                 </Link>
               </div>
@@ -793,7 +930,7 @@ export default function ProductDetailPage() {
               <Link href="/enquiry" className="btn-sidebar-query">
                 Enquire Now
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="white"/>
+                  <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="white" />
                 </svg>
               </Link>
             </div>
