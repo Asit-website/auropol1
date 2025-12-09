@@ -47,10 +47,10 @@ import ibn4 from '../../images/AL 335.jpeg';
 import ibn5 from '../../images/345.jpeg';
 import ibn6 from '../../images/96MB.jpeg';
 // Sample product data - in a real app, this would come from a database or API
-const productsData = {
+export const productsData = {
   'single-component-bonding-agent': {
     title: 'Single Component Bonding Agent',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392803/unsplash_x8ZStukS2PM_1_flkza9.svg',
+    image: Img825.src,
     description: 'Aurobond 825 provides excellent improvement of adhesion value between fabric and coated steel cord (brass coated) with rubber compound against unprotected thin component systems (Monofilament and Cordboad).',
     specification: 'Auroband-833 provides excellent improvement of adhesion value between fabric and rubber material with rubber compound against unprotected thin component systems (Monofilament and Cordboad).',
     advantages: [
@@ -64,7 +64,7 @@ const productsData = {
   },
   'two-component-bonding-agent': {
     title: 'Two Component Bonding Agent',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763393226/unsplash_x8ZStukS2PM_15_oecjh1.svg',
+    image: R50SImage.src,
     advantageGroups: [
       {
         heading: 'Modified Resorcinol Component',
@@ -93,7 +93,7 @@ const productsData = {
   },
   'peroxide-co-agent': {
     title: 'Peroxide Co Agent',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392804/unsplash_x8ZStukS2PM_2_idqnag.svg',
+    image: Img6860.src,
     description: 'Peroxide co-agent is a monomeric or oligomeric system that when used in a peroxide cure system enhances cross – linking. Aurosin Grades of Peroxide Co-agent is used to enhance peroxide curing of elastomeric systems. Synergestic use of co agents and peroxide can result in more efficient use of free radicals and improved cross link density. Also available in pre-dispersed polymer bound masterbatches',
     specification: 'Enhances peroxide cure systems in rubber compounds.',
     advantages: [
@@ -111,7 +111,7 @@ const productsData = {
   },
   'tackifying-agent': {
     title: 'Tackifying Agent',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392805/unsplash_x8ZStukS2PM_4_uqyhj5.svg',
+    image: Img202_1.src,
     description: 'Aurotack is used in elastomeric products which require green tack in their construction like tyres, belts, hoses and tread rubber. It is also used in the manufacturing of rubber adhesive. Aurotack does not have any adverse effect on the cure rate of the vulcanisation.',
     specification: 'Provides excellent tack and green strength in uncured rubber compounds.',
     productList: [
@@ -139,7 +139,7 @@ const productsData = {
   },
   'antisticking-agent': {
     title: 'Antisticking Agent',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392803/unsplash_x8ZStukS2PM_3_bkvewj.svg',
+    image: S560Image.src,
     description: 'It is used as aqueous dispersion for anti-adhesive treatment of unvulcanised rubber compound in the form of sheet or strips.',
     specification: 'Prevents self-adhesion of uncured rubber surfaces.',
     productList: [
@@ -159,7 +159,7 @@ const productsData = {
   'homogenizing-agent': {
     title: 'Homogenizing Agent',
     subheading: 'Aurosin 40 (dark) & Aurosin 60 (light)',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392803/unsplash_x8ZStukS2PM_6_f9uw5k.svg',
+    image: Img40.src,
     description: 'Improves the homogeneity of polymer blend with different polarities and viscosities, other compounding ingredients can also be mixed fast. It also improves processing behaviour and batch to batch uniformity.',
     specification: 'Promotes homogeneous distribution of additives in rubber matrix.',
     advantages: [
@@ -311,7 +311,7 @@ const productsData = {
   // Plastic Additives Products
   'multifunctional-process-aids': {
     title: 'Multifunctional Process Aids',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452039/product-pic13-big_pfk4mr.jpg',
+    image: Img300.src,
     productVariants: [
       {
         subheading: 'Auroaid 300',
@@ -339,7 +339,7 @@ const productsData = {
   },
   'process-aids-vinyl': {
     title: 'Process Aids for Vinyl compounds',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452039/product-pic18_exrhdn.jpg',
+    image: Img320.src,
     productVariants: [
       {
         subheading: 'Auroaid 320',

@@ -4,6 +4,8 @@ import { useRef, useState, useEffect } from 'react';
 import Link from 'next/link';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { rubberProducts, plasticProducts } from './components/ProductsContent';
+import { productsData } from './products/[slug]/page';
 export default function Home() {
   const sliderRef = useRef<HTMLDivElement>(null);
   const heroSliderRef = useRef<HTMLDivElement>(null);
@@ -186,6 +188,32 @@ export default function Home() {
     snapToNearestProductSlide();
   };
 
+  // Mouse wheel handler for smooth slide-by-slide scrolling
+  const handleProductWheel = (e: React.WheelEvent) => {
+    if (!productsSliderRef.current) return;
+
+    // Prevent default page scroll when hovering over the slider
+    e.preventDefault();
+
+    const { scrollLeft, clientWidth } = productsSliderRef.current;
+    const slideWidth = clientWidth;
+    const currentSlide = Math.round(scrollLeft / slideWidth);
+
+    let targetSlide = currentSlide;
+    if (e.deltaY > 0) {
+      // Scroll down: go to next slide
+      targetSlide = Math.min(currentSlide + 1, productSlides.length - 1);
+    } else if (e.deltaY < 0) {
+      // Scroll up: go to previous slide
+      targetSlide = Math.max(currentSlide - 1, 0);
+    }
+
+    if (targetSlide !== currentSlide) {
+      setIsProductAutoSlidePaused(true);
+      goToProductSlide(targetSlide);
+    }
+  };
+
   const handleProductMouseLeave = () => {
     if (!productsSliderRef.current) return;
     setIsProductDragging(false);
@@ -218,36 +246,20 @@ export default function Home() {
   };
 
   type FeaturedProduct = {
+    slug: string;
     name: string;
-    image: string;
+    // no image here; we always take image from productsData[slug]
   };
 
+  // Homepage slider products: take real items from Specialty Rubber Chemicals
+  // and Plastic Additives lists so that at least 15 products are shown, and
+  // reuse the same main image as their detail pages via productsData.
   const featuredProducts: FeaturedProduct[] = [
-    {
-      name: 'Modified DCPD Polymer',
-      image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392804/unsplash_x8ZStukS2PM_2_idqnag.svg'
-    },
-    {
-      name: 'Resorcinol Dispersions',
-      image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392803/unsplash_x8ZStukS2PM_3_bkvewj.svg'
-    },
-    {
-      name: 'Resorcinol Formaldehyde Resin',
-      image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392804/unsplash_x8ZStukS2PM_2_idqnag.svg'
-    },
-    {
-      name: 'Super Tackifier Resin',
-      image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392805/unsplash_x8ZStukS2PM_4_uqyhj5.svg'
-    },
-    {
-      name: 'Antisticking Agent',
-      image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392803/unsplash_x8ZStukS2PM_6_f9uw5k.svg'
-    },
-    {
-      name: 'Peroxide Co Agent',
-      image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392804/unsplash_x8ZStukS2PM_2_idqnag.svg'
-    }
-  ];
+    // Rubber products (first 8)
+    ...rubberProducts.slice(0, 8).map((p) => ({ slug: p.slug, name: p.name })),
+    // Plastic products (next 8)
+    ...plasticProducts.slice(0, 8).map((p) => ({ slug: p.slug, name: p.name })),
+  ].slice(0, 15); // ensure exactly 15 products
 
   // Create slides: 3 cards per slide on desktop, 1 card per slide on mobile
   const [isMobile, setIsMobile] = useState(false);
@@ -291,7 +303,7 @@ export default function Home() {
           goToProductSlide(0);
         }
       }
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(autoSlideInterval);
   }, [isProductAutoSlidePaused, productSlides.length, isMobile]);
@@ -607,6 +619,7 @@ export default function Home() {
             onMouseMove={handleProductMouseMove}
             onMouseUp={handleProductMouseUp}
             onMouseLeave={handleProductMouseLeave}
+            onWheel={handleProductWheel}
             onTouchStart={handleProductTouchStart}
             onTouchMove={handleProductTouchMove}
             onTouchEnd={handleProductTouchEnd}
@@ -614,14 +627,21 @@ export default function Home() {
             <div className="products-slider-track">
               {productSlides.map((slide, slideIndex) => (
                 <div className="product-slide" key={`product-slide-${slideIndex}`}>
-                  {slide.map((product) => (
-                    <div className="product-card" key={`${slideIndex}-${product.name}`}>
-                      <div className="product-card-imagess">
-                        <img src={product.image} alt={product.name} />
+                  {slide.map((product) => {
+                    const productData = productsData[product.slug as keyof typeof productsData];
+                    const imageSrc = productData?.image as string | undefined;
+
+                    return (
+                      <div className="product-card" key={`${slideIndex}-${product.name}`}>
+                        <div className="product-card-imagess">
+                          {imageSrc && (
+                            <img src={imageSrc} alt={product.name} />
+                          )}
+                        </div>
+                        <p className="product-card-name">{product.name}</p>
                       </div>
-                      <p className="product-card-name">{product.name}</p>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               ))}
             </div>
