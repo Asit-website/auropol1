@@ -924,7 +924,7 @@ export default function ProductDetailPage() {
             </div>
 
             {/* Sidebar Query Box */}
-            <div className="sidebar-query-box">
+            {/* <div className="sidebar-query-box">
               <h3 className="sidebar-query-heading">Have a Query?</h3>
               <p className="sidebar-query-text">We're here to help</p>
               <Link href="/enquiry" className="btn-sidebar-query">
@@ -933,7 +933,7 @@ export default function ProductDetailPage() {
                   <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="white" />
                 </svg>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

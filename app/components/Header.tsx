@@ -6,6 +6,7 @@ import { rubberProducts, plasticProducts } from './ProductsContent';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeProductsCategory, setActiveProductsCategory] = useState<'rubber' | 'plastic' | null>(null);
 
   const rubberProductsMenu = useMemo(
     () => rubberProducts.map((product) => ({
@@ -22,6 +23,19 @@ export default function Header() {
     })),
     []
   );
+
+  const activeProductsMenu =
+    activeProductsCategory === 'plastic'
+      ? plasticProductsMenu
+      : activeProductsCategory === 'rubber'
+        ? rubberProductsMenu
+        : [];
+  const activeProductsTitle =
+    activeProductsCategory === 'plastic'
+      ? 'Plastic Additives'
+      : activeProductsCategory === 'rubber'
+        ? 'Specialty Rubber Chemicals'
+        : '';
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -49,32 +63,43 @@ export default function Header() {
                 <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </button>
-            <div className="dropdown-menu">
-              <div className="dropdown-column">
-                <div className="dropdown-column-header">
-                  <span>Specialty Rubber Chemicals</span>
-                </div>
-                <div className="dropdown-list">
-                  {rubberProductsMenu.map((item) => (
-                    <Link key={item.href} href={item.href} className="dropdown-link">
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
+            <div
+              className={`dropdown-menu dropdown-mega ${activeProductsCategory ? '' : 'collapsed'}`}
+              onMouseLeave={() => setActiveProductsCategory(null)}
+            >
+              <div className="dropdown-mega-categories" role="menu" aria-label="Product categories">
+                <Link
+                  href="/products?category=rubber"
+                  className={`dropdown-mega-category ${activeProductsCategory === 'rubber' ? 'active' : ''}`}
+                  onMouseEnter={() => setActiveProductsCategory('rubber')}
+                  onFocus={() => setActiveProductsCategory('rubber')}
+                >
+                  Specialty Rubber Chemicals
+                </Link>
+                <Link
+                  href="/products?category=plastic"
+                  className={`dropdown-mega-category ${activeProductsCategory === 'plastic' ? 'active' : ''}`}
+                  onMouseEnter={() => setActiveProductsCategory('plastic')}
+                  onFocus={() => setActiveProductsCategory('plastic')}
+                >
+                  Plastic Additives
+                </Link>
               </div>
 
-              <div className="dropdown-column">
-                <div className="dropdown-column-header">
-                  <span>Plastic Additives</span>
+              {activeProductsCategory && (
+                <div className="dropdown-mega-products" aria-label={activeProductsTitle}>
+                  <div className="dropdown-column-header">
+                    <span>{activeProductsTitle}</span>
+                  </div>
+                  <div className="dropdown-list">
+                    {activeProductsMenu.map((item) => (
+                      <Link key={item.href} href={item.href} className="dropdown-link">
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-                <div className="dropdown-list">
-                  {plasticProductsMenu.map((item) => (
-                    <Link key={item.href} href={item.href} className="dropdown-link">
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
+              )}
             </div>
           </div>
           <Link href="/rd-technology" className="nav-link">R & D Technology</Link>

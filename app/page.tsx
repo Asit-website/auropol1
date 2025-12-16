@@ -24,6 +24,8 @@ export default function Home() {
   const [isProductDragging, setIsProductDragging] = useState(false);
   const [productStartX, setProductStartX] = useState(0);
   const [productScrollLeft, setProductScrollLeft] = useState(0);
+  const [canScrollProductsLeft, setCanScrollProductsLeft] = useState(false);
+  const [canScrollProductsRight, setCanScrollProductsRight] = useState(true);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!sliderRef.current) return;
@@ -147,6 +149,47 @@ export default function Home() {
       const slideWidth = productsSliderRef.current.clientWidth;
       productsSliderRef.current.scrollTo({
         left: slideIndex * slideWidth,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const checkProductsScrollability = () => {
+    if (productsSliderRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = productsSliderRef.current;
+      setCanScrollProductsLeft(scrollLeft > 0);
+      setCanScrollProductsRight(scrollLeft < scrollWidth - clientWidth - 10);
+    }
+  };
+
+  useEffect(() => {
+    checkProductsScrollability();
+    const slider = productsSliderRef.current;
+    if (slider) {
+      slider.addEventListener('scroll', checkProductsScrollability);
+      window.addEventListener('resize', checkProductsScrollability);
+      return () => {
+        slider.removeEventListener('scroll', checkProductsScrollability);
+        window.removeEventListener('resize', checkProductsScrollability);
+      };
+    }
+  }, []);
+
+  const scrollProductsLeft = () => {
+    if (productsSliderRef.current) {
+      const slideWidth = productsSliderRef.current.clientWidth;
+      productsSliderRef.current.scrollBy({
+        left: -slideWidth,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const scrollProductsRight = () => {
+    if (productsSliderRef.current) {
+      const slideWidth = productsSliderRef.current.clientWidth;
+      productsSliderRef.current.scrollBy({
+        left: slideWidth,
         behavior: 'smooth'
       });
     }
@@ -612,6 +655,17 @@ export default function Home() {
           onMouseEnter={() => setIsProductAutoSlidePaused(true)}
           onMouseLeave={() => setIsProductAutoSlidePaused(false)}
         >
+          <button
+            className={`products-slider-nav-btn products-slider-nav-left ${!canScrollProductsLeft ? 'disabled' : ''}`}
+            onClick={scrollProductsLeft}
+            aria-label="Previous products"
+            type="button"
+          >
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+
           <div 
             className="products-slider" 
             ref={productsSliderRef}
@@ -650,6 +704,17 @@ export default function Home() {
               ))}
             </div>
           </div>
+
+          <button
+            className={`products-slider-nav-btn products-slider-nav-right ${!canScrollProductsRight ? 'disabled' : ''}`}
+            onClick={scrollProductsRight}
+            aria-label="Next products"
+            type="button"
+          >
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 6L15 12L9 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
         </div>
       </section>
 
@@ -657,7 +722,8 @@ export default function Home() {
       <section className="brochure-section">
         {/* Left Side - Content */}
         <div className="brochure-content">
-          <p className="brochure-tagline">Brochure</p>
+
+          
           
           <h2 className="brochure-section-title">
             Specialty Rubber Chemicals
@@ -690,7 +756,7 @@ export default function Home() {
 
         {/* Right Side - Content (same format) */}
         <div className="brochure-content">
-          <p className="brochure-tagline">Brochure</p>
+          {/* <p className="brochure-tagline">Brochure</p> */}
           
           <h2 className="brochure-section-title">
           Plastic Additives
