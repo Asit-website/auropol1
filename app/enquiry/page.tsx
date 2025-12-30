@@ -250,7 +250,7 @@ export default function EnquiryPage() {
             </div>
 
             {/* Company Name Section */}
-            <div className="form-section-title">Company Name.</div>
+            {/* <div className="form-section-title">Company Name.</div> */}
             <div className="form-section-subtitle">Select the following choices:</div>
 
             {/* Document Type Radio Buttons */}

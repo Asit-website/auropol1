@@ -437,9 +437,9 @@ export const productsData = {
         subheading: 'Auroaid 90 MB',
         description: 'Auroaid 90 MB is a PFAS free polymer processing additive masterbatch developed to improve extrusion of different thermoplastic resins (LDPE, LLDPE, HDPE etc) along with process efficiency and product quality. Auroaid 90 MB can be easily incorporated into the process and will be more effective as the active component is uniformly dispersed in the carrier polymer.\n\nProduct is tested to meet the specification of US FDA 21 CFR 177.1520.\n\nAvailable : 3% and 5% active Content.',
         advantages: [
-          'Reduces die lines, die build up',
-          'Reduces or eliminates melt fracture',
-          'Reduces melt viscosity and enhances processing of high strength resins',
+          'Reduce die lines, die build up',
+          'Reduce or eliminates melt fracture',
+          'Reduce melt viscosity and enhances processing of high strength resins',
           'High throughput',
           'Excellent "shark skin" prevention in blown, cast and BOPP films',
           'Significant reduction of the coefficient of friction (COF) and strong permanent slip enhancement.'
@@ -884,7 +884,7 @@ export default function ProductDetailPage() {
                 <div className="brochure-download-card">
                   <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763212838/rubber-brochure_1_ouijmg.svg" alt="Brochure" />
                   <div className="brochure-download-content">
-                    <h3>High Quality Solutions for {applicationText === 'plastic' ? 'Plastic' : 'Rubber'} Manufacturing</h3>
+                    <h3>High Quality Solutions for {applicationText === 'plastic' ? 'Plastic' : 'Rubber'} Processing</h3>
                     <button className="btn-download">
                       Download Brochure
                       <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
