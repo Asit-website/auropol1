@@ -510,7 +510,21 @@ body {
 }
 .her-sec11{
   background-image: url('https://res.cloudinary.com/dgif730br/image/upload/v1767079804/WhatsApp_Image_2025-12-30_at_12.43.51_PM_kzclkb.jpg');
+  position: relative;
 }
+.her-sec11::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+}
+.her-sec11 h2, .her-sec11 p{
+  color: #fff;
+} 
 .her-sec111{
   background-image: url('https://res.cloudinary.com/dgif730br/image/upload/v1767079803/WhatsApp_Image_2025-12-30_at_12.43.52_PM_hygwis.jpg');
 }
@@ -542,6 +556,9 @@ body {
 }
 .hero-sec111 .hero-content{
   color: black;
+}
+.hero_con11{
+  width: 100% !important;
 }
 .hero-tagline {
   font-size: 16px;
@@ -955,12 +972,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease;
   text-decoration: none;
 }
 
 .product-card:hover {
-  transform: translateY(-8px);
   box-shadow: 0 20px 45px rgba(20, 115, 104, 0.15);
 }
 
@@ -3451,6 +3467,47 @@ body {
   }
 }
 
+/* Hero Buttons Split Layout */
+.hero-buttons-split {
+  display: flex;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.hero-buttons-left,
+.hero-buttons-right {
+  flex: 1;
+}
+
+/* Hero Content Split Layout */
+.hero-content-split {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.hero-content-left,
+.hero-content-right {
+  flex: 1;
+}
+
+.hero-category-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 16px 0;
+  font-family: "Roboto", sans-serif !important;
+}
+
+.hero-application-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  margin: 0;
+  font-family: "Roboto", sans-serif !important;
+}
+
 /* Product Detail Page Styles */
 .product-detail-page {
   min-height: 100vh;
@@ -3750,7 +3807,10 @@ body {
 .product-group-section {
   margin-bottom: 0;
 }
-
+.flame-first-image{
+  object-fit: contain !important;
+  max-height: 230px !important;
+}
 /* Product Variants Container for Dispersing & Processing Additives */
 .product-variants-container {
   display: flex;
@@ -4073,6 +4133,24 @@ body {
 }
 
 @media (max-width: 768px) {
+  .hero-content-split {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .hero-buttons-split {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .hero-category-title {
+    font-size: 24px;
+  }
+  
+  .hero-application-text {
+    font-size: 15px;
+  }
+
   .product-detail-hero {
     padding: 0 30px;
     min-height: 200px;

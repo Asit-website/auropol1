@@ -417,20 +417,63 @@ export default function Home() {
         <div className="hero-slider" ref={heroSliderRef}>
           <div className="hero-slider-track">
 
+              {/* Slide 1 */}
+            <section className="hero-section her-sec11">
+              <div className="hero-container">
+                <p className="hero-sky-label">Rubber Chemicals</p>
+                <div className="hero-content hero_con11">
+                  <div className="hero-content-split">
+                    <div className="hero-content-left">
+                      <h2 className="hero-category-title">Rubber Chemicals</h2>
+                      <p className="hero-application-text">
+                        Specialty rubber chemicals for superior performance in tires, industrial rubber goods, 
+                        and automotive components. Our bonding agents, antisticking agents, and processing 
+                        additives ensure optimal vulcanization and product durability.
+                      </p>
+                    </div>
+                    <div className="hero-content-right">
+                      <h2 className="hero-category-title">Plastic Additives</h2>
+                      <p className="hero-application-text">
+                        Our plastic additives enhance processing efficiency, improve material properties, 
+                        and ensure compliance with environmental standards. From flame retardants to 
+                        processing aids, we deliver solutions for PVC, polyolefins, and engineering plastics.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="hero-buttons-split">
+                    {/* <div className="hero-buttons-left">
+                      <Link href="/enquiry" className="btn-primary">
+                        Enquire Now
+                        <span className="btn-arrow">→</span>
+                      </Link>
+                    </div>
+                    <div className="hero-buttons-right">
+                      <Link href="/products" className="btn-secondary">
+                        View Products
+                        <span className="btn-arrow">→</span>
+                      </Link>
+                    </div> */}
+                  </div>
+                </div>
+              </div>
+            </section>
+
             {/* Slide 2 */}
             <section className="hero-section her-sec1">
               <div className="hero-container">
                 <div className="hero-content">
-                  <p className="hero-tagline">Speed. Skill. Assurance</p>
+                  {/* <p className="hero-tagline">Speed. Skill. Assurance</p> */}
                   
                   <h1 className="hero-title">
                     Exceptional Quality, performance & sustainability
                 </h1>
                   
                   <p className="hero-description">
-                    We manufacture high-performance chemical solutions tailored for the{' '}
+                    {/* We manufacture high-performance chemical solutions tailored for the{' '}
                     <strong>rubber and plastic industries</strong> — ensuring exceptional adhesion, 
-                    durability, and compliance.
+                    durability, and compliance. */}
+                    We manufacture high-performance specialty chemical tailored for the <strong> rubber and plastic industries </strong> – ensuring exceptional adhesion, durability, and compliance.
                   </p>
                   
                   <div className="hero-buttons">
@@ -448,47 +491,15 @@ export default function Home() {
             </section>
 
 
-            {/* Slide 1 */}
-            <section className="hero-section her-sec11">
-              <div className="hero-container">
-                <p className="hero-sky-label">Plastic Additives</p>
-                {/* <div className="hero-content">
-                  <p className="hero-tagline">Speed. Skill. Assurance</p>
-                  
-                  <h1 className="hero-title">
-                    Exceptional Quality, performance & sustainability
-                </h1>
-                  
-                  <p className="hero-description">
-                    We manufacture high-performance chemical solutions tailored for the{' '}
-                    <strong>rubber and plastic industries</strong> — ensuring exceptional adhesion, 
-                    durability, and compliance.
-                  </p>
-                  
-                  <div className="hero-buttons">
-                    <Link href="/enquiry" className="btn-primary">
-                      Enquire Now
-                      <span className="btn-arrow">→</span>
-                    </Link>
-                    <Link href="/products" className="btn-secondary">
-                      View Products
-                      <span className="btn-arrow">→</span>
-                    </Link>
-                  </div>
-                </div> */}
-              </div>
-            </section>
-
-            
-
             {/* Slide 3 */}
             <section className="hero-section her-sec111">
               <div className="hero-container">
                 <div className="hero-content">
-                  <p className="hero-tagline">Speed. Skill. Assurance</p>
+                  {/* <p className="hero-tagline">Speed. Skill. Assurance</p> */}
                   
                   <h1 className="hero-title">
-                    Exceptional Quality, performance & sustainability
+                    {/* Exceptional Quality, performance & sustainability */}
+                    Sustainability & ESG focus
                 </h1>
                   
                   <p className="hero-description">
@@ -547,7 +558,7 @@ export default function Home() {
         <div className="quality_sect">
           {/* Left Side - Content Panel */}
           <div className="quality-content-panel">
-            <p className="quality-tagline">Quality</p>
+            {/* <p className="quality-tagline">Quality</p> */}
             <h2 className="quality-title">
               Quality Without Compromise
             </h2>
@@ -558,7 +569,7 @@ export default function Home() {
             
             {/* Certification Logos */}
             <div className="quality-logos">
-              <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_328_cmfdmq.png" alt="ISO Certification" />
+              <img src="https://res.cloudinary.com/dgif730br/image/upload/v1768373550/image_328_qfl0js.svg" alt="ISO Certification" />
               <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_329_cxr9t1.png" alt="ZED Certification" />
             </div>
 
@@ -734,14 +745,14 @@ export default function Home() {
           </p>
           
           <div className="brochure-buttons">
-            <Link href="/products?category=plastic" className="btn-request">
+            <Link href="mailto:marketing@auropolindia.com" className="btn-request">
               Request Brochure
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56"/>
               </svg>
             </Link>
             
-            <Link href="/products?category=plastic" className="btn-brochure-link">
+            <Link href="/products?category=rubber" className="btn-brochure-link">
               Read More
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56"/>
@@ -767,14 +778,14 @@ export default function Home() {
           </p>
           
           <div className="brochure-buttons">
-            <Link href="/enquiry" className="btn-request">
+            <Link href="mailto:marketing@auropolindia.com" className="btn-request">
               Request Brochure
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56"/>
               </svg>
             </Link>
             
-            <Link href="/products?category=rubber" className="btn-brochure-link">
+            <Link href="/products?category=plastic" className="btn-brochure-link">
               Read More
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56"/>

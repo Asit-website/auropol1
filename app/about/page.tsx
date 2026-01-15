@@ -41,7 +41,7 @@ export default function AboutPage() {
           </p>
 
           <p className="about-text">
-            This practise has led Auropol to the path of continual improvement. Auropol is involved and 
+            This practice has led Auropol to the path of continual improvement. Auropol is involved and 
             committed to help customers make better and more economical products.
           </p>
         </div>

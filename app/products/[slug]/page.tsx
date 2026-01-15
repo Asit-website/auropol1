@@ -52,10 +52,10 @@ export const productsData = {
     title: 'Single Component Bonding Agent',
     image: Img825.src,
     description: 'Aurobond 825 provides excellent improvement of adhesion value between fabric and coated steel cord (brass coated) with rubber compound against unprotected thin component systems (Monofilament and Cordboad).',
-    specification: 'Auroband-833 provides excellent improvement of adhesion value between fabric and rubber material with rubber compound against unprotected thin component systems (Monofilament and Cordboad).',
+    // specification: 'Auroband-833 provides excellent improvement of adhesion value between fabric and rubber material with rubber compound against unprotected thin component systems (Monofilament and Cordboad).',
     advantages: [
       'Disperses easily in rubber compound',
-      'Helps to effectively avoid dust during mixing',
+      // 'Helps to effectively avoid dust during mixing',
       'Reduces dust hazards',
       'Improves green tack of the compound',
       'Better adhesion properties with rubber compound',
@@ -98,7 +98,7 @@ export const productsData = {
     specification: 'Enhances peroxide cure systems in rubber compounds.',
     advantages: [
       'Higher Tensile Strength & modulus',
-      'Lower Compression',
+      'Lower compression set',
       'Improves heat ageing & Adhesion',
       'Improves Dynamics properties',
       'Higher hardness',
@@ -171,13 +171,14 @@ export const productsData = {
   'anti-abrasion': {
     title: 'Anti-Abrasion Additive',
     subheading: 'Auroaid AR 262',
+    // like surface slip
     // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392803/unsplash_x8ZStukS2PM_7_jnqkaw.svg',
     image:ibn1.src,
     description: 'It is an efficient anti-abrasion additive for rubber compound, used in tyre, conveyor belt, rubber shoe sole, etc.',
     specification: 'Significantly improves wear resistance and service life.',
     advantages: [
       'Improves abrasion resistance',
-      'Improves surface quality like surface slip, gloss and surface finish',
+      'Improves surface quality , gloss and surface finish',
       'Improves processing properties including better flow ability, reduces extrusion die drool, less extruder torque',
       'Eco-friendly material',
       'Applicable for NR, NBR, EPDM, CR, BR, SBR, IR, HR, CSM, etc'
@@ -210,7 +211,7 @@ export const productsData = {
       },
       {
         subheading: 'Aurosin FRM 920',
-        description: 'Halogenated FR in masterbatch form suitable for rubber compound, which provided varying degree of flammability protection. It also shows improved mechanical & chemical properties.',
+        description: 'Proprietary FR in masterbatch form suitable for rubber compound, which provided varying degree of flammability protection. It also shows improved mechanical & chemical properties.',
         advantages: [
           'Reduces fly loss and dust hazards',
           'Uniform dispersion',
@@ -276,7 +277,7 @@ export const productsData = {
     title: 'Desiccant for Rubber',
     subheading: 'Aurosin 1028',
     image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392863/unsplash_x8ZStukS2PM_11_joqvsp.svg',
-    description: 'Aurosin 1028 is specially designed to absorbed the entrapped moisture and acid fumes and thereby preventing the formation of air bubble or blister in the product.',
+    description: 'Aurosin 1028 is specially designed to absorb the entrapped moisture and acid fumes and thereby preventing the formation of air bubble or blister in the product.',
     advantages: [
       'Reduces surface defects generated from the entrapped moisture and fumes',
       'Have negligible impact on curing or physical properties',
@@ -288,7 +289,7 @@ export const productsData = {
     title: 'Antistatic Agent',
     subheading: 'Auroaid AS 355',
     // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392862/unsplash_x8ZStukS2PM_12_zhr7mu.svg',
-    image: sd.src,
+    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1768370300/SD_255_ycygoi.jpg',
     description: 'Auroaid AS 355 eliminates buildup of static electric charge on the surface of finished products .The static electricity needs to be dispersed to avoid problems such as sparking or dust attraction.',
     advantages: [
       'Minimizes risk of electrical discharge that may cause fire or explosion',
@@ -475,16 +476,16 @@ export const productsData = {
           'Eco-friendly material'
         ]
       },
-      {
-        subheading: 'Auroaid AR 262',
-        description: 'Auroaid AR 262 It is an efficient anti-abrasion additive for rubber compound, used in tyre, conveyor belt, rubber shoe sole, etc.',
-        advantages: [
-          'Improves abrasion resistance',
-          'Improves surface quality, gloss and surface finish',
-          'Improves processing properties including better flow ability, reduces extrusion die drool, less extruder torque',
-          'Eco-friendly material u Applicable for NR, NBR, EPDM, CR, BR, SBR, IR, HR, CSM, etc'
-        ]
-      }
+      // {
+      //   subheading: 'Auroaid AR 262',
+      //   description: 'Auroaid AR 262 It is an efficient anti-abrasion additive for rubber compound, used in tyre, conveyor belt, rubber shoe sole, etc.',
+      //   advantages: [
+      //     'Improves abrasion resistance',
+      //     'Improves surface quality, gloss and surface finish',
+      //     'Improves processing properties including better flow ability, reduces extrusion die drool, less extruder torque',
+      //     'Eco-friendly material u Applicable for NR, NBR, EPDM, CR, BR, SBR, IR, HR, CSM, etc'
+      //   ]
+      // }
     ]
   },
   'plastic-flame-retardants': {
@@ -499,9 +500,10 @@ export const productsData = {
         ]
       },
       {
-        subheading: 'Aurosin FRP 912',
-        description: 'Aurosin FRP 912 is a proprietary flame retardant additive suitable for PVC, CPE, PVC-Nitrile blend FR / FRLS cable compound.',
-        application: 'Flame retardant chemicals are used in FR/FRLS cable compound to inhibit combustion or to delay the spread of fire after ignition. Aurosin FRP 912 provides varying degrees of flammability protection when added or incorporated into PVC as well as halogenated rubber (CPE , Polychloroprene, PVC-Nitrile blend etc) compound.',
+        // 912
+        subheading: 'Aurosin FRP 921',
+        description: 'Aurosin FRP 921 is a proprietary flame retardant additive suitable for PVC, CPE, PVC-Nitrile blend FR / FRLS cable compound.',
+        application: 'Flame retardant chemicals are used in FR/FRLS cable compound to inhibit combustion or to delay the spread of fire after ignition. Aurosin FRP 921 provides varying degrees of flammability protection when added or incorporated into PVC as well as halogenated rubber (CPE , Polychloroprene, PVC-Nitrile blend etc) compound.',
         advantages: [
           'Minimum or no impact on curing parameter',
           'Comparable compound stability'
@@ -555,7 +557,7 @@ export const productsData = {
   'plastic-antistatic-agent': {
     title: 'Antistatic Agent',
     subheading: 'Auroaid AS 355',
-    image: sd.src,
+    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1768370300/SD_255_ycygoi.jpg',
     description: 'Auroaid AS 355 eliminates static electric charge on the surface of finished products. The static electricity needs to be dissipated to avoid problems such as sparking or dust accumulation.',
     advantages: [
       'Minimizes risk of static electric charge that may cause fire or explosion',
@@ -670,8 +672,8 @@ export default function ProductDetailPage() {
                 </div>
               ) : slug === 'flame' ? (
                 <div className='gall_img'>
-                  <img src={FlameImage.src} alt="Flame Retardant" className="product-lab-gallery-image" />
-                  <img src={FRM920Image.src} alt="FRM 920" className="product-lab-gallery-image" />
+                  <img src={FlameImage.src} alt="Flame Retardant" className="product-lab-gallery-image flame-first-image" />
+                  <img src={FRM920Image.src} alt="FRM 920" className="product-lab-gallery-image flame-first-image" />
                 </div>
               ) : slug === 'antisticking-agent' ? (
                 <div className='gall_img'>
