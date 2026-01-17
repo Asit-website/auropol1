@@ -473,6 +473,7 @@ export default function Home() {
                     {/* We manufacture high-performance chemical solutions tailored for the{' '}
                     <strong>rubber and plastic industries</strong> — ensuring exceptional adhesion, 
                     durability, and compliance. */}
+                   
                     We manufacture high-performance specialty chemical tailored for the <strong> rubber and plastic industries </strong> – ensuring exceptional adhesion, durability, and compliance.
                   </p>
                   

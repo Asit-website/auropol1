@@ -51,7 +51,7 @@ export const productsData = {
   'single-component-bonding-agent': {
     title: 'Single Component Bonding Agent',
     image: Img825.src,
-    description: 'Aurobond 825 provides excellent improvement of adhesion value between fabric and coated steel cord (brass coated) with rubber compound against unprotected thin component systems (Monofilament and Cordboad).',
+    description: 'AUROBOND 825 provides excellent improvement in adhesion value between fabric and coated steel cord (brass coated) with rubber compound against conventional two-component bonding systems.',
     // specification: 'Auroband-833 provides excellent improvement of adhesion value between fabric and rubber material with rubber compound against unprotected thin component systems (Monofilament and Cordboad).',
     advantages: [
       'Disperses easily in rubber compound',
@@ -104,9 +104,9 @@ export const productsData = {
       'Higher hardness',
       'Lower viscosity',
       'Improves resistance to oils and fuels',
-      'Improves rubber to reinforcing material adhesion',
       'Increases cure rate',
-      'Improves peroxide efficiency'
+      'Improves peroxide efficiency',
+      'Improves rubber to reinforcing material adhesion',
     ]
   },
   'tackifying-agent': {
@@ -148,12 +148,13 @@ export const productsData = {
       'Aurosap L550 – Water Soluble Liquid'
     ],
     advantages: [
-      'Prevents common problems like blister, sticking, porosity etc',
+      
       'No effect on vulcanization',
       'Activity is excellent & uniform in nature',
       'Smooth surface finish',
       'Uniform coatings on rubber sheets',
-      'No pungent gas is liberated & no foaming'
+      'No pungent gas is liberated & no foaming',
+      'Prevents common problems like blister, sticking, porosity etc',
     ]
   },
   'homogenizing-agent': {
@@ -645,7 +646,7 @@ export default function ProductDetailPage() {
               {slug === 'single-component-bonding-agent' ? (
                 <div className='gall_img'>
                   <img src={Img825.src} alt="Single Component Bonding Agent - 825" className="product-lab-gallery-image" />
-                  <img src={Img825_2.src} alt="Single Component Bonding Agent - 825 (2)" className="product-lab-gallery-image" />
+                  {/* <img src={Img825_2.src} alt="Single Component Bonding Agent - 825 (2)" className="product-lab-gallery-image" /> */}
                 </div>
               ) : slug === 'two-component-bonding-agent' ? (
                 <div className='gall_img'>
@@ -678,7 +679,7 @@ export default function ProductDetailPage() {
               ) : slug === 'antisticking-agent' ? (
                 <div className='gall_img'>
                   <img src={S560Image.src} alt="Antisticking Agent - S560" className="product-lab-gallery-image" />
-                  <img src={AurosapPasteImage.src} alt="Antisticking Agent - Aurosap Paste" className="product-lab-gallery-image" />
+                  {/* <img src={AurosapPasteImage.src} alt="Antisticking Agent - Aurosap Paste" className="product-lab-gallery-image" /> */}
                 </div>
               ) : slug === 'tackifying-agent' ? (
                 <div className='gall_img'>
@@ -880,7 +881,7 @@ export default function ProductDetailPage() {
               </div>
             )}
 
-            <div className="product-two-column-section">
+            <div className="product-two-column-section dfdh">
               <div className="product-detail-section product-brochure-download">
                 <h2 className="product-section-heading">Brochure</h2>
                 <div className="brochure-download-card">

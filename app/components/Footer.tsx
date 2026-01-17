@@ -9,9 +9,9 @@ export default function Footer() {
           </div>
           {/* <h3 className="footer-company-name">AUROPOL INDIA PVT LTD</h3> */}
           
-          <p className="footer-description">
+          {/* <p className="footer-description">
             Auropol manufactures specialty rubber chemicals and plastic additives, driven by innovation, quality, and customer-focused R&D.
-          </p>
+          </p> */}
           
           <div className="footer-address">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

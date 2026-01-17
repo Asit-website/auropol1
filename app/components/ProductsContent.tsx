@@ -14,7 +14,7 @@ export const rubberProducts = [
   { slug: 'anti-abrasion', name: 'Anti-Abrasion Additive', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392803/unsplash_x8ZStukS2PM_7_jnqkaw.svg', category: 'rubber' },
   { slug: 'flame', name: 'Flame Retardants', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392802/unsplash_x8ZStukS2PM_8_mrdg6d.svg', category: 'rubber' },
   { slug: 'dispersing-processing-additives', name: 'Dispersing & Processing Additives', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392864/unsplash_x8ZStukS2PM_9_zqbywg.svg', category: 'rubber' },
-  { slug: 'desiccant-agent-silica', name: 'Desiccant Agent for Silica', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392866/unsplash_x8ZStukS2PM_10_urq8xs.svg', category: 'rubber' },
+  { slug: 'desiccant-agent-silica', name: 'Dispersing Agent for Silica', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392866/unsplash_x8ZStukS2PM_10_urq8xs.svg', category: 'rubber' },
   { slug: 'desiccant-rubber', name: 'Desiccant for Rubber', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392863/unsplash_x8ZStukS2PM_11_joqvsp.svg', category: 'rubber' },
   { slug: 'antistatic-agent', name: 'Antistatic Agent', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392862/unsplash_x8ZStukS2PM_12_zhr7mu.svg', category: 'rubber' },
   { slug: 'smoke-suppressant', name: 'Smoke Suppressant', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392861/unsplash_x8ZStukS2PM_13_xg94ad.svg', category: 'rubber' }
