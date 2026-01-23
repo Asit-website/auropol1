@@ -51,9 +51,9 @@ export default function QualityPolicyPage() {
                 <div className="policy-cert-card">
                   <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_329_cxr9t1.png" alt="Certification 2" />
                 </div>
-                <div className="policy-cert-card">
+                {/* <div className="policy-cert-card">
                   <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_329_cxr9t1.png" alt="Certification 3" />
-                </div>
+                </div> */}
               </div>
             </div>
 

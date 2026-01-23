@@ -522,7 +522,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5));
   z-index: 1;
 }
 .her-sec11 h2, .her-sec11 p{
@@ -3641,7 +3641,8 @@ body {
 .gall_img img {
   width: 100%;
   /* height: 120px; */
-  max-height: 180px;
+  /* max-height: 180px; */
+  max-height: 275px;
   object-fit: contain;
   object-fit: cover;
   border-radius: 12px;

@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Auropol - Exceptional Quality, Performance & Sustainability",
-  description: "We manufacture high-performance chemical solutions tailored for the rubber and plastic industries — ensuring exceptional adhesion, durability, and compliance.",
+  description: "We manufacture high-performance specialty chemical tailored for the rubber and plastic industries – ensuring enhanced performance, reliability, and consistency.",
 };
 
 export default function RootLayout({

@@ -128,7 +128,7 @@ export const productsData = {
   'physical-modifiers': {
     title: 'Physical Peptizer',
     subheading: 'Auroaid 250',
-    image: IBN.src,
+    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1769151158/WhatsApp_Image_2026-01-22_at_3.11.07_PM_6_qawtjg.jpg',
     description: 'A unique physical peptizer for natural and polyisoprene rubber, the processibility of the compound is noticeably improved without lowering the molecular weight as chemical peptizers do.',
     specification: 'Tailors physical characteristics to meet specific application requirements.',
     advantages: [
@@ -148,7 +148,7 @@ export const productsData = {
       'Aurosap L550 – Water Soluble Liquid'
     ],
     advantages: [
-      
+
       'No effect on vulcanization',
       'Activity is excellent & uniform in nature',
       'Smooth surface finish',
@@ -174,7 +174,7 @@ export const productsData = {
     subheading: 'Auroaid AR 262',
     // like surface slip
     // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392803/unsplash_x8ZStukS2PM_7_jnqkaw.svg',
-    image:ibn1.src,
+    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1769151455/WhatsApp_Image_2026-01-22_at_3.11.07_PM_7_by1f0w.jpg',
     description: 'It is an efficient anti-abrasion additive for rubber compound, used in tyre, conveyor belt, rubber shoe sole, etc.',
     specification: 'Significantly improves wear resistance and service life.',
     advantages: [
@@ -302,7 +302,7 @@ export const productsData = {
     title: 'Smoke Suppressant',
     subheading: 'Aurogaurd 905',
     // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392861/unsplash_x8ZStukS2PM_13_xg94ad.svg',
-    image: ibn2.src,
+    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1769152063/WhatsApp_Image_2026-01-22_at_3.11.07_PM_11_b4tba1.jpg',
     description: 'Aurogaurd 905 is a unique smoke suppressant for both halogenated and non halogenated polymers. It acts efficiently in making Fire Resistant Low Smoke (FRLS) compound from a non-halogenated polymer when used in combination with Antimony Trioxide (Sb₂O₃) and trace of halogenated additives. Aurogaurd 905 also reduces the hazard from generation of smoke, toxic and corrosive fumes and does not impair any physical properties.',
     advantages: [
       'Lowering surface spread on exposure',
@@ -407,7 +407,7 @@ export const productsData = {
     title: 'Dispersing Additive for Anti-fibrillation',
     subheading: 'Auroaid 345',
     // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452037/product-pic40_wyrbov.jpg',
-    image: ibn5.src,
+    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1769152214/WhatsApp_Image_2026-01-22_at_3.11.07_PM_12_nbwdwb.jpg',
     description: 'Auroaid 345 is a unique dispersing additive for Anti-fibrillation master batches & compounds for reducing water carry over on tape line during high speed operation and thus increases gloss and strength of the tape.',
     advantages: [
       'Reduces water carry over on tape line during high speed operation',
@@ -421,7 +421,7 @@ export const productsData = {
     title: 'Smoke Suppressant',
     subheading: 'Aurogaurd 905',
     // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392861/unsplash_x8ZStukS2PM_13_xg94ad.svg',
-    image: ibn2.src,
+    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1769152334/WhatsApp_Image_2026-01-22_at_3.11.07_PM_13_laheb9.jpg',
     description: 'Aurogaurd 905 lowers the generation of smoke and toxic fumes for fire resistant PVC, CSP and EPDM compounds',
     advantages: [
       'To reduce the smoke generation',
@@ -433,7 +433,7 @@ export const productsData = {
   'polymer-processing-additives': {
     title: 'Polymer Processing Additives ( PPA)',
     // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452039/ppa_f5gzqm.jpg',
-    image:ibn6.src,
+    image: ibn6.src,
     productVariants: [
       {
         subheading: 'Auroaid 90 MB',
@@ -650,25 +650,29 @@ export default function ProductDetailPage() {
                 </div>
               ) : slug === 'two-component-bonding-agent' ? (
                 <div className='gall_img'>
-                  <img src={R50SImage.src} alt="Aurobond R50(S) - Modified Resorcinol dipping agent" className="product-lab-gallery-image" />
+                  {/* <img src={R50SImage.src} alt="Aurobond R50(S) - Modified Resorcinol dipping agent" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150074/WhatsApp_Image_2026-01-22_at_3.11.07_PM_dg6xj7.jpg"} alt="Aurobond R50(S) - Modified Resorcinol dipping agent" className="product-lab-gallery-image" />
                   <img src={R80SImage.src} alt="Aurobond R80(S) - Resorcinol Rubber Masterbatch" className="product-lab-gallery-image" />
 
                   <img src={RD20Image.src} alt="Aurobond RD 20 - Resorcinol Formaldehyde Resin" className="product-lab-gallery-image" />
 
-                  <img src={RDISImage.src} alt="Aurobond RD I(S) - Modified Resorcinol & inert carrier" className="product-lab-gallery-image" />
+                  {/* <img src={RDISImage.src} alt="Aurobond RD I(S) - Modified Resorcinol & inert carrier" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150354/WhatsApp_Image_2026-01-22_at_3.11.07_PM_1_mhv22m.jpg"} alt="Aurobond RD I(S) - Modified Resorcinol & inert carrier" className="product-lab-gallery-image" />
+                  {/* <img src={RDIImage.src} alt="Aurobond RD I - Resorcinol Filler Masterbatch" className="product-lab-gallery-image" /> */}
 
-                  <img src={RDIImage.src} alt="Aurobond RD I - Resorcinol Filler Masterbatch" className="product-lab-gallery-image" />
-
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150353/WhatsApp_Image_2026-01-22_at_3.11.07_PM_2_wmtuax.jpg"} alt="Aurobond RD I - Resorcinol Filler Masterbatch" className="product-lab-gallery-image" />
                   <img src={RD22Image.src} alt="Aurobond RD22 - Modified Resorcinol Formaldehyde Resin" className="product-lab-gallery-image" />
                 </div>
               ) : slug === 'peroxide-co-agent' ? (
                 <div className='gall_img'>
                   <img src={Img6860.src} alt="Peroxide Co Agent - Image 1" className="product-lab-gallery-image" />
-                  <img src={Img6866.src} alt="Peroxide Co Agent - Image 2" className="product-lab-gallery-image" />
+                  {/* <img src={Img6866.src} alt="Peroxide Co Agent - Image 2" className="product-lab-gallery-image" /> */}
+                   <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150770/WhatsApp_Image_2026-01-22_at_3.11.07_PM_3_sdkh67.jpg"} alt="Peroxide Co Agent - Image 2" className="product-lab-gallery-image" />
                 </div>
               ) : slug === 'plastic-peroxide-co-agent' ? (
                 <div className='gall_img'>
-                  <img src={Img6860.src} alt="Peroxide Co Agent - Image 1" className="product-lab-gallery-image" />
+                  {/* <img src={Img6860.src} alt="Peroxide Co Agent - Image 1" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150353/WhatsApp_Image_2026-01-22_at_3.11.07_PM_2_wmtuax.jpg"} alt="Peroxide Co Agent - Image 1" className="product-lab-gallery-image" />
                   <img src={Img6866.src} alt="Peroxide Co Agent - Image 2" className="product-lab-gallery-image" />
                 </div>
               ) : slug === 'flame' ? (
@@ -683,14 +687,17 @@ export default function ProductDetailPage() {
                 </div>
               ) : slug === 'tackifying-agent' ? (
                 <div className='gall_img'>
-                  <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150964/WhatsApp_Image_2026-01-22_at_3.11.07_PM_5_bl51jj.jpg"} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
                   <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" />
-                  <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" />
+                  {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                    <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" />
                 </div>
               ) : slug === 'dispersing-processing-additives' ? (
                 <div className='gall_img'>
                   <img src={Img212.src} alt="Dispersing & Processing Additives - 212" className="product-lab-gallery-image" />
-                  <img src={Img216.src} alt="Dispersing & Processing Additives - 216" className="product-lab-gallery-image" />
+                  {/* <img src={Img216.src} alt="Dispersing & Processing Additives - 216" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769151881/WhatsApp_Image_2026-01-22_at_3.11.07_PM_10_djjvzn.jpg"} alt="Dispersing & Processing Additives - 216" className="product-lab-gallery-image" />
                   <img src={Img222.src} alt="Dispersing & Processing Additives - 222" className="product-lab-gallery-image" />
                   <img src={Img244.src} alt="Dispersing & Processing Additives - 244" className="product-lab-gallery-image" />
                 </div>
@@ -717,7 +724,8 @@ export default function ProductDetailPage() {
               ) : slug === 'plastic-anti-abrasion' ? (
                 <div className='gall_img'>
                   <img src={ImgSE362.src} alt="Plastic Anti-Abrasion - SE 362" className="product-lab-gallery-image" />
-                  <img src={ImgAR262_2.src} alt="Plastic Anti-Abrasion - AR 262" className="product-lab-gallery-image" />
+                  {/* <img src={ImgAR262_2.src} alt="Plastic Anti-Abrasion - AR 262" className="product-lab-gallery-image" /> */}
+                   <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769151455/WhatsApp_Image_2026-01-22_at_3.11.07_PM_7_by1f0w.jpg"} alt="Plastic Anti-Abrasion - AR 262" className="product-lab-gallery-image" />
                 </div>
               ) : slug === 'processing-dispersing-additives' ? (
                 <div className='gall_img'>

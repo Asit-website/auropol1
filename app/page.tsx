@@ -474,7 +474,7 @@ export default function Home() {
                     <strong>rubber and plastic industries</strong> — ensuring exceptional adhesion, 
                     durability, and compliance. */}
                    
-                    We manufacture high-performance specialty chemical tailored for the <strong> rubber and plastic industries </strong> – ensuring exceptional adhesion, durability, and compliance.
+                    We manufacture high-performance specialty chemical tailored for the <strong> rubber and plastic industries </strong> – ensuring enhanced performance, reliability, and consistency.
                   </p>
                   
                   <div className="hero-buttons">
@@ -1165,7 +1165,7 @@ export default function Home() {
 
         {/* Right Side - Teal Panel with Title */}
         <div className="about-content-panel">
-          <p className="about-panel-tagline">Speed. Skill. Assurance</p>
+          {/* <p className="about-panel-tagline">Speed. Skill. Assurance</p> */}
           <h2 className="about-panel-title">
             The ultimate source for specialty chemicals
           </h2>
