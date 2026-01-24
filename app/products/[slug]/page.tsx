@@ -64,7 +64,7 @@ export const productsData = {
   },
   'two-component-bonding-agent': {
     title: 'Two Component Bonding Agent',
-    image: R50SImage.src,
+    image: "https://res.cloudinary.com/dgif730br/image/upload/v1769150074/WhatsApp_Image_2026-01-22_at_3.11.07_PM_dg6xj7.jpg",
     advantageGroups: [
       {
         heading: 'Modified Resorcinol Component',
@@ -93,7 +93,7 @@ export const productsData = {
   },
   'peroxide-co-agent': {
     title: 'Peroxide Co Agent',
-    image: Img6860.src,
+    image: "https://res.cloudinary.com/dgif730br/image/upload/v1769150770/WhatsApp_Image_2026-01-22_at_3.11.07_PM_3_sdkh67.jpg",
     description: 'Peroxide co-agent is a monomeric or oligomeric system that when used in a peroxide cure system enhances cross – linking. Aurosin Grades of Peroxide Co-agent is used to enhance peroxide curing of elastomeric systems. Synergestic use of co agents and peroxide can result in more efficient use of free radicals and improved cross link density. Also available in pre-dispersed polymer bound masterbatches',
     specification: 'Enhances peroxide cure systems in rubber compounds.',
     advantages: [
@@ -111,7 +111,7 @@ export const productsData = {
   },
   'tackifying-agent': {
     title: 'Tackifying Agent',
-    image: Img202_1.src,
+    image: "https://res.cloudinary.com/dgif730br/image/upload/v1769150964/WhatsApp_Image_2026-01-22_at_3.11.07_PM_5_bl51jj.jpg",
     description: 'Aurotack is used in elastomeric products which require green tack in their construction like tyres, belts, hoses and tread rubber. It is also used in the manufacturing of rubber adhesive. Aurotack does not have any adverse effect on the cure rate of the vulcanisation.',
     specification: 'Provides excellent tack and green strength in uncured rubber compounds.',
     productList: [
@@ -341,7 +341,7 @@ export const productsData = {
   },
   'process-aids-vinyl': {
     title: 'Process Aids for Vinyl compounds',
-    image: Img320.src,
+    image: "https://res.cloudinary.com/dgif730br/image/upload/v1769150353/WhatsApp_Image_2026-01-22_at_3.11.07_PM_2_wmtuax.jpg",
     productVariants: [
       {
         subheading: 'Auroaid 320',
@@ -819,7 +819,7 @@ export default function ProductDetailPage() {
                 </div>
               ) : slug === 'process-aids-vinyl' ? (
                 <div className='gall_img'>
-                  <img src={Img320.src} alt="Process Aids for Vinyl - 320" className="product-lab-gallery-image" />
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150353/WhatsApp_Image_2026-01-22_at_3.11.07_PM_2_wmtuax.jpg"} alt="Process Aids for Vinyl - 320" className="product-lab-gallery-image" />
                   <img src={Img322.src} alt="Process Aids for Vinyl - 322" className="product-lab-gallery-image" />
                 </div>
               ) : slug === 'plastic-anti-abrasion' ? (
