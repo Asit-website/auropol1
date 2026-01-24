@@ -693,7 +693,108 @@ export default function ProductDetailPage() {
                   {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
                     <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" />
                 </div>
-              ) : slug === 'dispersing-processing-additives' ? (
+
+              ) 
+              : slug === 'physical-modifiers' ? (
+                <div className='gall_img'>
+                  {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769151158/WhatsApp_Image_2026-01-22_at_3.11.07_PM_6_qawtjg.jpg"} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  {/* <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" /> */}
+                  {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                    {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                </div>
+              )
+               : slug === 'anti-abrasion' ? (
+                <div className='gall_img'>
+                  {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769151455/WhatsApp_Image_2026-01-22_at_3.11.07_PM_7_by1f0w.jpg"} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  {/* <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" /> */}
+                  {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                    {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                </div>
+              )
+              : slug === 'antistatic-agent' ? (
+                <div className='gall_img'>
+                  {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1768370300/SD_255_ycygoi.jpg"} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  {/* <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" /> */}
+                  {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                    {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                </div>
+              )
+              : slug === 'smoke-suppressant' ? (
+                <div className='gall_img'>
+                  {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769152063/WhatsApp_Image_2026-01-22_at_3.11.07_PM_11_b4tba1.jpg"} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  {/* <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" /> */}
+                  {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                    {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                </div>
+              )
+              : slug === 'antiblock-additive' ? (
+                <div className='gall_img'>
+                  {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
+                  <img src={ibn3.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  {/* <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" /> */}
+                  {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                    {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                </div>
+              )
+               : slug === 'dispersing-wetting-agent' ? (
+                <div className='gall_img'>
+                  {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
+                  <img src={ibn4.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  {/* <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" /> */}
+                  {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                    {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                </div>
+              )
+              : slug === 'dispersing-additive-anti-fibrillation' ? (
+                <div className='gall_img'>
+                  {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769152214/WhatsApp_Image_2026-01-22_at_3.11.07_PM_12_nbwdwb.jpg"} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  {/* <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" /> */}
+                  {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                    {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                </div>
+              )
+              : slug === 'plastic-smoke-suppressant' ? (
+                <div className='gall_img'>
+                  {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769152334/WhatsApp_Image_2026-01-22_at_3.11.07_PM_13_laheb9.jpg"} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  {/* <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" /> */}
+                  {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                    {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                </div>
+              )
+              : slug === 'polymer-processing-additives' ? (
+                <div className='gall_img'>
+                  {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
+                  <img src={ibn6.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  {/* <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" /> */}
+                  {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                    {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                </div>
+              )
+               : slug === 'plastic-flame-retardants' ? (
+                <div className='gall_img'>
+                  {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1763452038/product-pic12-big_tovbya.jpg"} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  {/* <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" /> */}
+                  {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                    {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                </div>
+              )
+               : slug === 'plastic-antistatic-agent' ? (
+                <div className='gall_img'>
+                  {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1768370300/SD_255_ycygoi.jpg"} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  {/* <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" /> */}
+                  {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                    {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                </div>
+              )
+              : slug === 'dispersing-processing-additives' ? (
                 <div className='gall_img'>
                   <img src={Img212.src} alt="Dispersing & Processing Additives - 212" className="product-lab-gallery-image" />
                   {/* <img src={Img216.src} alt="Dispersing & Processing Additives - 216" className="product-lab-gallery-image" /> */}
