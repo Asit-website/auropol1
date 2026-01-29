@@ -500,13 +500,11 @@ export default function Home() {
                   
                   <h1 className="hero-title">
                     {/* Exceptional Quality, performance & sustainability */}
-                    Sustainability & ESG focus
+                    Sustainability & ESG
                 </h1>
                   
                   <p className="hero-description">
-                    We manufacture high-performance chemical solutions tailored for the{' '}
-                    <strong>rubber and plastic industries</strong> — ensuring exceptional adhesion, 
-                    durability, and compliance.
+                   We are committed to sustainable manufacturing and responsible business practices. Our ESG framework focuses on environmental stewardship, safe and ethical workplaces, and transparent governance. By integrating sustainability into our operations, we create long-term value for our customers, communities, and the environment.
                   </p>
                   
                   <div className="hero-buttons">

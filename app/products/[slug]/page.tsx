@@ -111,7 +111,7 @@ export const productsData = {
   },
   'tackifying-agent': {
     title: 'Tackifying Agent',
-    image: "https://res.cloudinary.com/dgif730br/image/upload/v1769150964/WhatsApp_Image_2026-01-22_at_3.11.07_PM_5_bl51jj.jpg",
+    image: "https://res.cloudinary.com/dgif730br/image/upload/v1769665545/WhatsApp_Image_2026-01-28_at_6.00.02_PM_o3py9s.jpg",
     description: 'Aurotack is used in elastomeric products which require green tack in their construction like tyres, belts, hoses and tread rubber. It is also used in the manufacturing of rubber adhesive. Aurotack does not have any adverse effect on the cure rate of the vulcanisation.',
     specification: 'Provides excellent tack and green strength in uncured rubber compounds.',
     productList: [
@@ -160,7 +160,8 @@ export const productsData = {
   'homogenizing-agent': {
     title: 'Homogenizing Agent',
     subheading: 'Aurosin 40 (dark) & Aurosin 60 (light)',
-    image: Img40.src,
+    // image: Img40.src,
+    image:"https://res.cloudinary.com/dgif730br/image/upload/v1769665314/WhatsApp_Image_2026-01-28_at_5.56.46_PM_y7f3g9.jpg",
     description: 'Improves the homogeneity of polymer blend with different polarities and viscosities, other compounding ingredients can also be mixed fast. It also improves processing behaviour and batch to batch uniformity.',
     specification: 'Promotes homogeneous distribution of additives in rubber matrix.',
     advantages: [
@@ -688,10 +689,10 @@ export default function ProductDetailPage() {
               ) : slug === 'tackifying-agent' ? (
                 <div className='gall_img'>
                   {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
-                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150964/WhatsApp_Image_2026-01-22_at_3.11.07_PM_5_bl51jj.jpg"} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
-                  <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" />
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769665545/WhatsApp_Image_2026-01-28_at_6.00.02_PM_o3py9s.jpg"} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  {/* <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" /> */}
                   {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
-                    <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" />
+                    {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
                 </div>
 
               ) 
@@ -835,8 +836,9 @@ export default function ProductDetailPage() {
                 </div>
               ) : slug === 'homogenizing-agent' ? (
                 <div className='gall_img'>
-                  <img src={Img40.src} alt="Homogenizing Agent - 40" className="product-lab-gallery-image" />
-                  <img src={Img60.src} alt="Homogenizing Agent - 60" className="product-lab-gallery-image" />
+                  {/* 40,60 */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769665314/WhatsApp_Image_2026-01-28_at_5.56.45_PM_w3smtj.jpg"} alt="Homogenizing Agent - 40" className="product-lab-gallery-image" />
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769665314/WhatsApp_Image_2026-01-28_at_5.56.46_PM_y7f3g9.jpg"} alt="Homogenizing Agent - 60" className="product-lab-gallery-image" />
                 </div>
               ) : (
                 <img src={product.image} alt={product.title} />
