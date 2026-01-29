@@ -64,7 +64,7 @@ export const productsData = {
   },
   'two-component-bonding-agent': {
     title: 'Two Component Bonding Agent',
-    image: "https://res.cloudinary.com/dgif730br/image/upload/v1769150074/WhatsApp_Image_2026-01-22_at_3.11.07_PM_dg6xj7.jpg",
+    image: "https://res.cloudinary.com/dgif730br/image/upload/v1769665314/WhatsApp_Image_2026-01-28_at_5.56.45_PM_w3smtj.jpg",
     advantageGroups: [
       {
         heading: 'Modified Resorcinol Component',
@@ -652,7 +652,8 @@ export default function ProductDetailPage() {
               ) : slug === 'two-component-bonding-agent' ? (
                 <div className='gall_img'>
                   {/* <img src={R50SImage.src} alt="Aurobond R50(S) - Modified Resorcinol dipping agent" className="product-lab-gallery-image" /> */}
-                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150074/WhatsApp_Image_2026-01-22_at_3.11.07_PM_dg6xj7.jpg"} alt="Aurobond R50(S) - Modified Resorcinol dipping agent" className="product-lab-gallery-image" />
+                  {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150074/WhatsApp_Image_2026-01-22_at_3.11.07_PM_dg6xj7.jpg"} alt="Aurobond R50(S) - Modified Resorcinol dipping agent" className="product-lab-gallery-image" /> */}
+                   <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769665314/WhatsApp_Image_2026-01-28_at_5.56.45_PM_w3smtj.jpg"} alt="Aurobond R50(S) - Modified Resorcinol dipping agent" className="product-lab-gallery-image" />
                   <img src={R80SImage.src} alt="Aurobond R80(S) - Resorcinol Rubber Masterbatch" className="product-lab-gallery-image" />
 
                   <img src={RD20Image.src} alt="Aurobond RD 20 - Resorcinol Formaldehyde Resin" className="product-lab-gallery-image" />
@@ -837,7 +838,7 @@ export default function ProductDetailPage() {
               ) : slug === 'homogenizing-agent' ? (
                 <div className='gall_img'>
                   {/* 40,60 */}
-                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769665314/WhatsApp_Image_2026-01-28_at_5.56.45_PM_w3smtj.jpg"} alt="Homogenizing Agent - 40" className="product-lab-gallery-image" />
+                  {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769665314/WhatsApp_Image_2026-01-28_at_5.56.45_PM_w3smtj.jpg"} alt="Homogenizing Agent - 40" className="product-lab-gallery-image" /> */}
                   <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769665314/WhatsApp_Image_2026-01-28_at_5.56.46_PM_y7f3g9.jpg"} alt="Homogenizing Agent - 60" className="product-lab-gallery-image" />
                 </div>
               ) : (
