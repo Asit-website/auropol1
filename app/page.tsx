@@ -17,7 +17,7 @@ export default function Home() {
   const [canScrollHeroLeft, setCanScrollHeroLeft] = useState(false);
   const [canScrollHeroRight, setCanScrollHeroRight] = useState(true);
   const [isAutoSlidePaused, setIsAutoSlidePaused] = useState(false);
-  
+
   // Products slider state
   const productsSliderRef = useRef<HTMLDivElement>(null);
   const [isProductAutoSlidePaused, setIsProductAutoSlidePaused] = useState(false);
@@ -130,7 +130,7 @@ export default function Home() {
         const slideWidth = clientWidth;
         const currentSlide = Math.round(scrollLeft / slideWidth);
         const totalSlides = 3;
-        
+
         if (currentSlide < totalSlides - 1) {
           // Move to next slide
           goToSlide(currentSlide + 1);
@@ -306,7 +306,7 @@ export default function Home() {
 
   // Create slides: 3 cards per slide on desktop, 1 card per slide on mobile
   const [isMobile, setIsMobile] = useState(false);
-  
+
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -396,51 +396,51 @@ export default function Home() {
           </a>
         </div>
       </header> */}
-      <Header/>
+      <Header />
 
       {/* Hero Slider Section */}
-      <div 
+      <div
         className="hero-slider-wrapper"
         onMouseEnter={() => setIsAutoSlidePaused(true)}
         onMouseLeave={() => setIsAutoSlidePaused(false)}
       >
-        <button 
+        <button
           className={`hero-slider-nav-btn hero-slider-nav-left ${!canScrollHeroLeft ? 'disabled' : ''}`}
           onClick={scrollHeroLeft}
           aria-label="Previous slide"
         >
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
 
         <div className="hero-slider" ref={heroSliderRef}>
           <div className="hero-slider-track">
 
-              {/* Slide 1 */}
+            {/* Slide 1 */}
             <section className="hero-section her-sec11">
               <div className="hero-container">
                 <p className="hero-sky-label">Rubber Chemicals</p>
                 <div className="hero-content hero_con11">
                   <div className="hero-content-split">
                     <div className="hero-content-left">
-                      <h2 className="hero-category-title">Rubber Chemicals</h2>
+                      <h2 className="hero-category-title">Smarter Additives. <br />
+                        Smoother Processing. <br />
+                        Stronger <span style={{ color: "#7fffdd" }}>Performance.</span> </h2>
                       <p className="hero-application-text">
-                        Specialty rubber chemicals for superior performance in tires, industrial rubber goods, 
-                        and automotive components. Our bonding agents, antisticking agents, and processing 
-                        additives ensure optimal vulcanization and product durability.
+                        Advanced solutions for rubber & plastic applications.
                       </p>
                     </div>
-                    <div className="hero-content-right">
+                    {/* <div className="hero-content-right">
                       <h2 className="hero-category-title">Plastic Additives</h2>
                       <p className="hero-application-text">
-                        Our plastic additives enhance processing efficiency, improve material properties, 
-                        and ensure compliance with environmental standards. From flame retardants to 
+                        Our plastic additives enhance processing efficiency, improve material properties,
+                        and ensure compliance with environmental standards. From flame retardants to
                         processing aids, we deliver solutions for PVC, polyolefins, and engineering plastics.
                       </p>
-                    </div>
+                    </div> */}
                   </div>
-                  
+
                   <div className="hero-buttons-split">
                     {/* <div className="hero-buttons-left">
                       <Link href="/enquiry" className="btn-primary">
@@ -464,19 +464,19 @@ export default function Home() {
               <div className="hero-container">
                 <div className="hero-content">
                   {/* <p className="hero-tagline">Speed. Skill. Assurance</p> */}
-                  
+
                   <h1 className="hero-title">
                     Exceptional Quality, performance & sustainability
-                </h1>
-                  
+                  </h1>
+
                   <p className="hero-description">
                     {/* We manufacture high-performance chemical solutions tailored for the{' '}
                     <strong>rubber and plastic industries</strong> — ensuring exceptional adhesion, 
                     durability, and compliance. */}
-                   
+
                     We manufacture high-performance specialty chemical tailored for the <strong> rubber and plastic industries </strong> – ensuring enhanced performance, reliability, and consistency.
                   </p>
-                  
+
                   <div className="hero-buttons">
                     <Link href="/enquiry" className="btn-primary">
                       Enquire Now
@@ -497,16 +497,18 @@ export default function Home() {
               <div className="hero-container">
                 <div className="hero-content">
                   {/* <p className="hero-tagline">Speed. Skill. Assurance</p> */}
-                  
+
                   <h1 className="hero-title">
                     {/* Exceptional Quality, performance & sustainability */}
                     Sustainability & ESG
-                </h1>
-                  
+                  </h1>
+
                   <p className="hero-description">
-                   We are committed to sustainable manufacturing and responsible business practices. Our ESG framework focuses on environmental stewardship, safe and ethical workplaces, and transparent governance. By integrating sustainability into our operations, we create long-term value for our customers, communities, and the environment.
+                    Building responsible, compliant,
+                    and future-ready chemical solutions.
+                    {/* We are committed to sustainable manufacturing and responsible business practices. Our ESG framework focuses on environmental stewardship, safe and ethical workplaces, and transparent governance. By integrating sustainability into our operations, we create long-term value for our customers, communities, and the environment. */}
                   </p>
-                  
+
                   <div className="hero-buttons">
                     <Link href="/enquiry" className="btn-primary">
                       Enquire Now
@@ -523,34 +525,34 @@ export default function Home() {
           </div>
         </div>
 
-        <button 
+        <button
           className={`hero-slider-nav-btn hero-slider-nav-right ${!canScrollHeroRight ? 'disabled' : ''}`}
           onClick={scrollHeroRight}
           aria-label="Next slide"
         >
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
 
         {/* Slider Indicators */}
         <div className="hero-slider-indicators">
-          <div 
+          <div
             className={`hero-indicator ${currentHeroSlide === 0 ? 'active' : ''}`}
             onClick={() => goToSlide(0)}
           ></div>
-          <div 
+          <div
             className={`hero-indicator ${currentHeroSlide === 1 ? 'active' : ''}`}
             onClick={() => goToSlide(1)}
           ></div>
-          <div 
+          <div
             className={`hero-indicator ${currentHeroSlide === 2 ? 'active' : ''}`}
             onClick={() => goToSlide(2)}
           ></div>
         </div>
       </div>
 
-     
+
 
       {/* Quality Section */}
       <section className="quality-section">
@@ -562,10 +564,10 @@ export default function Home() {
               Quality Without Compromise
             </h2>
             <p className="quality-description">
-              We manufacture and supply all products under stringent quality norms, 
+              We manufacture and supply all products under stringent quality norms,
               ensuring consistency, safety, and performance across every batch.
             </p>
-            
+
             {/* Certification Logos */}
             <div className="quality-logos">
               <img src="https://res.cloudinary.com/dgif730br/image/upload/v1768373550/image_328_qfl0js.svg" alt="ISO Certification" />
@@ -575,7 +577,7 @@ export default function Home() {
             <Link href="/quality-policy" className="btn-read-more">
               Read More About Our Quality Standards
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56"/>
+                <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56" />
               </svg>
             </Link>
           </div>
@@ -653,14 +655,14 @@ export default function Home() {
         </div>
       </section> */}
 
-    
+
       <section className="products-slider-section">
         <div className="products-slider-header">
           <p className="products-slider-eyebrow">OUR PRODUCTS</p>
           <h2 className="products-slider-title">Specialty Rubber Chemicals and Plastic Additives</h2>
         </div>
 
-        <div 
+        <div
           className="products-slider-wrapper"
           onMouseEnter={() => setIsProductAutoSlidePaused(true)}
           onMouseLeave={() => setIsProductAutoSlidePaused(false)}
@@ -672,12 +674,12 @@ export default function Home() {
             type="button"
           >
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
 
-          <div 
-            className="products-slider" 
+          <div
+            className="products-slider"
             ref={productsSliderRef}
             onMouseDown={handleProductMouseDown}
             onMouseMove={handleProductMouseMove}
@@ -722,7 +724,7 @@ export default function Home() {
             type="button"
           >
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 6L15 12L9 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M9 6L15 12L9 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
         </div>
@@ -733,67 +735,67 @@ export default function Home() {
         {/* Left Side - Content */}
         <div className="brochure-content">
 
-          
-          
+
+
           <h2 className="brochure-section-title">
             Specialty Rubber Chemicals
           </h2>
-          
+
           <p className="brochure-description">
             Browse our product-specific brochures and get the technical data you need — delivered to your inbox upon enquiry.
           </p>
-          
+
           <div className="brochure-buttons">
             <Link href="mailto:marketing@auropolindia.com" className="btn-request">
               Request Brochure
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56"/>
+                <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56" />
               </svg>
             </Link>
-            
+
             <Link href="/products?category=rubber" className="btn-brochure-link">
               Read More
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56"/>
+                <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56" />
               </svg>
             </Link>
           </div>
-          
+
           <div className="brochure-divider"></div>
-          
+
           {/* <h3 className="brochure-secondary-title">Plastic Additives</h3> */}
         </div>
 
         {/* Right Side - Content (same format) */}
         <div className="brochure-content">
           {/* <p className="brochure-tagline">Brochure</p> */}
-          
+
           <h2 className="brochure-section-title">
-          Plastic Additives
+            Plastic Additives
           </h2>
-          
+
           <p className="brochure-description">
-          Browse our product-specific brochures and get the technical data you need — delivered to your inbox upon enquiry.
+            Browse our product-specific brochures and get the technical data you need — delivered to your inbox upon enquiry.
           </p>
-          
+
           <div className="brochure-buttons">
             <Link href="mailto:marketing@auropolindia.com" className="btn-request">
               Request Brochure
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56"/>
+                <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56" />
               </svg>
             </Link>
-            
+
             <Link href="/products?category=plastic" className="btn-brochure-link">
               Read More
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56"/>
+                <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56" />
               </svg>
             </Link>
           </div>
-          
+
           <div className="brochure-divider"></div>
-          
+
           {/* <h3 className="brochure-secondary-title">Plastic Additives</h3> */}
         </div>
       </section>
@@ -1139,38 +1141,38 @@ export default function Home() {
           <p>Website Design & Developed by <a href="#" target="_blank" rel="noopener noreferrer">Thinktech Software</a></p>
         </div>
       </footer> */}
-       {/* About Section with Hover Effect */}
-       <section className="about-section">
+      {/* About Section with Hover Effect */}
+      <section className="about-section">
         <div className="about_sect">
-        {/* Left Side - Image with Hover Overlay */}
-        <div className="about-image-container">
-          <div className="about-overlay">
-            <div className="about-overlay-content">
-              <p>
-                Auropol is a leading manufacturer of specialty chemicals for rubber 
-                and plastic industries. With emphasis on quality and innovative 
-                product development, Auropol aims to become the preferred supplier 
-                by remaining alert to customer's changing needs and responding 
-                with speed, skill and assurance.
-              </p>
-              <Link href="/about" className="btn-know-more">
-                Know More
-                <span>→</span>
-              </Link>
+          {/* Left Side - Image with Hover Overlay */}
+          <div className="about-image-container">
+            <div className="about-overlay">
+              <div className="about-overlay-content">
+                <p>
+                  Auropol is a leading manufacturer of specialty chemicals for rubber
+                  and plastic industries. With emphasis on quality and innovative
+                  product development, Auropol aims to become the preferred supplier
+                  by remaining alert to customer's changing needs and responding
+                  with speed, skill and assurance.
+                </p>
+                <Link href="/about" className="btn-know-more">
+                  Know More
+                  <span>→</span>
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Right Side - Teal Panel with Title */}
-        <div className="about-content-panel">
-          {/* <p className="about-panel-tagline">Speed. Skill. Assurance</p> */}
-          <h2 className="about-panel-title">
-            The ultimate source for specialty chemicals
-          </h2>
-        </div>
+          {/* Right Side - Teal Panel with Title */}
+          <div className="about-content-panel">
+            {/* <p className="about-panel-tagline">Speed. Skill. Assurance</p> */}
+            <h2 className="about-panel-title">
+              The ultimate source for specialty chemicals
+            </h2>
+          </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
