@@ -139,7 +139,7 @@ export const productsData = {
   },
   'antisticking-agent': {
     title: 'Antisticking Agent',
-    image: "https://res.cloudinary.com/dgif730br/image/upload/v1769842836/WhatsApp_Image_2026-01-31_at_12.22.28_PM_qzrarf.jpg",
+    image: "https://res.cloudinary.com/dgif730br/image/upload/v1769842983/WhatsApp_Image_2026-01-31_at_12.22.30_PM_tp3ihs.jpg",
     description: 'It is used as aqueous dispersion for anti-adhesive treatment of unvulcanised rubber compound in the form of sheet or strips.',
     specification: 'Prevents self-adhesion of uncured rubber surfaces.',
     productList: [
@@ -381,7 +381,7 @@ export const productsData = {
     title: 'Antiblock Additive',
     subheading: 'Auroaid 315C',
     // image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452039/antiblock_eyewow.jpg',
-    image: "https://res.cloudinary.com/dgif730br/image/upload/v1769842983/WhatsApp_Image_2026-01-31_at_12.22.30_PM_tp3ihs.jpg",
+    image: "https://res.cloudinary.com/dgif730br/image/upload/v1769842836/WhatsApp_Image_2026-01-31_at_12.22.28_PM_qzrarf.jpg",
     description: 'Auroaid 315C is an amide based external lubricant and excellent antiblocking agent for plastic processing. It also improves flow and surface finish.',
     advantages: [
       'ABS /Polystyrene : Improves flow and mould release properties.',
@@ -684,8 +684,8 @@ export default function ProductDetailPage() {
                 </div>
               ) : slug === 'antisticking-agent' ? (
                 <div className='gall_img'>
-                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769842836/WhatsApp_Image_2026-01-31_at_12.22.28_PM_qzrarf.jpg"} alt="Antisticking Agent - S560" className="product-lab-gallery-image" />
-                  {/* <img src={AurosapPasteImage.src} alt="Antisticking Agent - Aurosap Paste" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769842983/WhatsApp_Image_2026-01-31_at_12.22.30_PM_tp3ihs.jpg"} alt="Antisticking Agent - S560" className="product-lab-gallery-image" />
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769845659/WhatsApp_Image_2026-01-31_at_1.03.21_PM_edsrhe.jpg"} alt="Antisticking Agent - Aurosap Paste" className="product-lab-gallery-image" />
                 </div>
               ) : slug === 'tackifying-agent' ? (
                 <div className='gall_img'>
@@ -736,7 +736,7 @@ export default function ProductDetailPage() {
               : slug === 'antiblock-additive' ? (
                 <div className='gall_img'>
                   {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
-                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769842983/WhatsApp_Image_2026-01-31_at_12.22.30_PM_tp3ihs.jpg"} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769842836/WhatsApp_Image_2026-01-31_at_12.22.28_PM_qzrarf.jpg"} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
                   {/* <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" /> */}
                   {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
                     {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
