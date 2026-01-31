@@ -509,8 +509,8 @@ body {
 } */
 
 .her-sec1{
-  /* background-image: url('https://res.cloudinary.com/dgif730br/image/upload/v1763964833/WhatsApp_Image_2025-11-24_at_11.25.21_AM_xey9fv.jpg'); */
-  background-image: url('https://res.cloudinary.com/dgif730br/image/upload/v1769837695/WhatsApp_Image_2026-01-30_at_9.52.19_PM_juphwn.jpg');
+  background-image: url('https://res.cloudinary.com/dgif730br/image/upload/v1763964833/WhatsApp_Image_2025-11-24_at_11.25.21_AM_xey9fv.jpg');
+  /* background-image: url('https://res.cloudinary.com/dgif730br/image/upload/v1769837695/WhatsApp_Image_2026-01-30_at_9.52.19_PM_juphwn.jpg'); */
 }
  .hero-content-left{
   position: absolute;
@@ -519,7 +519,7 @@ body {
   left: 50%;
   text-align: center;
 }
-.her-sec1::before{
+/* .her-sec1::before{
    content: '';
   position: absolute;
   top: 0;
@@ -528,9 +528,9 @@ body {
   bottom: 0;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5));
   z-index: 1;
-}
+} */
 .her-sec11{
-  background-image: url('https://res.cloudinary.com/dgif730br/image/upload/v1767079804/WhatsApp_Image_2025-12-30_at_12.43.51_PM_kzclkb.jpg');
+  background-image: url('https://res.cloudinary.com/dgif730br/image/upload/v1769837695/WhatsApp_Image_2026-01-30_at_9.52.19_PM_juphwn.jpg');
   position: relative;
 }
 .her-sec11::before {

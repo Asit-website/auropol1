@@ -69,9 +69,9 @@ export default function RDTechnologyPage() {
                   <div className="certification-card">
                     <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_329_cxr9t1.png" alt="Quality Certification" />
                   </div>
-                  <div className="certification-card">
+                  {/* <div className="certification-card">
                     <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_329_cxr9t1.png" alt="Industry Certification" />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
