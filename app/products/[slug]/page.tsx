@@ -63,16 +63,64 @@ export const productsData = {
     ]
   },
   'resorcinol-masterbatch': {
-    title: 'Resorcinol Masterbatch',
+    title: 'Two Component Bonding Agent',
     image: "https://res.cloudinary.com/dgif730br/image/upload/v1770016055/R_80_S.0103c49e_qal2bm.jpg",
-    redirectTo: 'two-component-bonding-agent',
-    description: 'Resorcinol Masterbatch for improved adhesion in rubber compounds.'
+     advantageGroups: [
+      {
+        heading: 'Modified Resorcinol Component',
+        items: [
+          'Aurobond RD I (S)- Modified Resorcinol & inert carrier',
+          'Aurobond RD22- Modfied Resorcinol Formaldehyde Resin',
+          'Aurobond R50(S)- Modified Resorcinol dipping agent'
+        ]
+      },
+      {
+        heading: 'Resorcinol Component',
+        items: [
+          'Aurobond RD I- Resorcinol Filler Masterbatch',
+          'Aurobond RD 20 - Resorcinol Formaldehyde Resin',
+          'Aurobond R80 (S) - Resorcinol Rubber Masterbatch'
+        ]
+      },
+      {
+        heading: 'Methylene Component',
+        items: [
+          'Aurobond MD IV - HMMM Masterbatch',
+          'Aurobond MD 65 - HMMM Masterbatch'
+        ]
+      }
+    ]
   },
   'rfl-dipping': {
-    title: 'RFL Dipping',
+    title: 'Two Component Bonding Agent',
     image: "https://res.cloudinary.com/dgif730br/image/upload/v1770016424/WhatsApp_Image_2026-01-28_at_5.56.45_PM_w3smtj_xjk4bf.jpg",
-    redirectTo: 'two-component-bonding-agent',
-    description: 'RFL Dipping for improved adhesion in rubber compounds.'
+    // redirectTo: 'two-component-bonding-agent',
+    // description: 'RFL Dipping for improved adhesion in rubber compounds.'
+     advantageGroups: [
+      {
+        heading: 'Modified Resorcinol Component',
+        items: [
+          'Aurobond RD I (S)- Modified Resorcinol & inert carrier',
+          'Aurobond RD22- Modfied Resorcinol Formaldehyde Resin',
+          'Aurobond R50(S)- Modified Resorcinol dipping agent'
+        ]
+      },
+      {
+        heading: 'Resorcinol Component',
+        items: [
+          'Aurobond RD I- Resorcinol Filler Masterbatch',
+          'Aurobond RD 20 - Resorcinol Formaldehyde Resin',
+          'Aurobond R80 (S) - Resorcinol Rubber Masterbatch'
+        ]
+      },
+      {
+        heading: 'Methylene Component',
+        items: [
+          'Aurobond MD IV - HMMM Masterbatch',
+          'Aurobond MD 65 - HMMM Masterbatch'
+        ]
+      }
+    ]
   },
   'two-component-bonding-agent': {
     title: 'Two Component Bonding Agent',
@@ -593,6 +641,8 @@ export const productsData = {
 
 const rubberProducts = [
   { slug: 'single-component-bonding-agent', name: 'Resorcinol free Single Component Bonding Agent', category: 'rubber' },
+  { slug: 'resorcinol-masterbatch', name: 'Resorcinol Masterbatch', category: 'rubber' },
+  { slug: 'rfl-dipping', name: 'RFL Dipping', category: 'rubber' },
   { slug: 'two-component-bonding-agent', name: 'Two Component Bonding Agent', category: 'rubber' },
   { slug: 'peroxide-co-agent', name: 'Peroxide Co Agent', category: 'rubber' },
   { slug: 'antisticking-agent', name: 'Antisticking Agent', category: 'rubber' },
@@ -635,16 +685,16 @@ export default function ProductDetailPage() {
   }
 
   // Handle redirection for Resorcinol Masterbatch
-  if (slug === 'resorcinol-masterbatch' && product.redirectTo) {
-    router.push(`/products/${product.redirectTo}`);
-    return <div>Redirecting...</div>;
-  }
+  // if (slug === 'resorcinol-masterbatch' && product.redirectTo) {
+  //   router.push(`/products/${product.redirectTo}`);
+  //   return <div>Redirecting...</div>;
+  // }
 
-  // Handle redirection for RFL Dipping
-  if (slug === 'rfl-dipping' && product.redirectTo) {
-    router.push(`/products/${product.redirectTo}`);
-    return <div>Redirecting...</div>;
-  }
+  // // Handle redirection for RFL Dipping
+  // if (slug === 'rfl-dipping' && product.redirectTo) {
+  //   router.push(`/products/${product.redirectTo}`);
+  //   return <div>Redirecting...</div>;
+  // }
 
   // Detect category based on slug
   const isPlasticProduct = plasticProducts.some(p => p.slug === slug);
@@ -701,7 +751,45 @@ export default function ProductDetailPage() {
                   <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150353/WhatsApp_Image_2026-01-22_at_3.11.07_PM_2_wmtuax.jpg"} alt="Aurobond RD I - Resorcinol Filler Masterbatch" className="product-lab-gallery-image" />
                   <img src={RD22Image.src} alt="Aurobond RD22 - Modified Resorcinol Formaldehyde Resin" className="product-lab-gallery-image" />
                 </div>
-              ) : slug === 'peroxide-co-agent' ? (
+                
+              )
+              : slug === 'resorcinol-masterbatch' ? (
+                <div className='gall_img'>
+                  {/* <img src={R50SImage.src} alt="Aurobond R50(S) - Modified Resorcinol dipping agent" className="product-lab-gallery-image" /> */}
+                  {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150074/WhatsApp_Image_2026-01-22_at_3.11.07_PM_dg6xj7.jpg"} alt="Aurobond R50(S) - Modified Resorcinol dipping agent" className="product-lab-gallery-image" /> */}
+                   <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769665314/WhatsApp_Image_2026-01-28_at_5.56.45_PM_w3smtj.jpg"} alt="Aurobond R50(S) - Modified Resorcinol dipping agent" className="product-lab-gallery-image" />
+                  <img src={R80SImage.src} alt="Aurobond R80(S) - Resorcinol Rubber Masterbatch" className="product-lab-gallery-image" />
+
+                  <img src={RD20Image.src} alt="Aurobond RD 20 - Resorcinol Formaldehyde Resin" className="product-lab-gallery-image" />
+
+                  {/* <img src={RDISImage.src} alt="Aurobond RD I(S) - Modified Resorcinol & inert carrier" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150354/WhatsApp_Image_2026-01-22_at_3.11.07_PM_1_mhv22m.jpg"} alt="Aurobond RD I(S) - Modified Resorcinol & inert carrier" className="product-lab-gallery-image" />
+                  {/* <img src={RDIImage.src} alt="Aurobond RD I - Resorcinol Filler Masterbatch" className="product-lab-gallery-image" /> */}
+
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150353/WhatsApp_Image_2026-01-22_at_3.11.07_PM_2_wmtuax.jpg"} alt="Aurobond RD I - Resorcinol Filler Masterbatch" className="product-lab-gallery-image" />
+                  <img src={RD22Image.src} alt="Aurobond RD22 - Modified Resorcinol Formaldehyde Resin" className="product-lab-gallery-image" />
+                </div>
+                
+              ) 
+               : slug === 'rfl-dipping' ? (
+                <div className='gall_img'>
+                  {/* <img src={R50SImage.src} alt="Aurobond R50(S) - Modified Resorcinol dipping agent" className="product-lab-gallery-image" /> */}
+                  {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150074/WhatsApp_Image_2026-01-22_at_3.11.07_PM_dg6xj7.jpg"} alt="Aurobond R50(S) - Modified Resorcinol dipping agent" className="product-lab-gallery-image" /> */}
+                   <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769665314/WhatsApp_Image_2026-01-28_at_5.56.45_PM_w3smtj.jpg"} alt="Aurobond R50(S) - Modified Resorcinol dipping agent" className="product-lab-gallery-image" />
+                  <img src={R80SImage.src} alt="Aurobond R80(S) - Resorcinol Rubber Masterbatch" className="product-lab-gallery-image" />
+
+                  <img src={RD20Image.src} alt="Aurobond RD 20 - Resorcinol Formaldehyde Resin" className="product-lab-gallery-image" />
+
+                  {/* <img src={RDISImage.src} alt="Aurobond RD I(S) - Modified Resorcinol & inert carrier" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150354/WhatsApp_Image_2026-01-22_at_3.11.07_PM_1_mhv22m.jpg"} alt="Aurobond RD I(S) - Modified Resorcinol & inert carrier" className="product-lab-gallery-image" />
+                  {/* <img src={RDIImage.src} alt="Aurobond RD I - Resorcinol Filler Masterbatch" className="product-lab-gallery-image" /> */}
+
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150353/WhatsApp_Image_2026-01-22_at_3.11.07_PM_2_wmtuax.jpg"} alt="Aurobond RD I - Resorcinol Filler Masterbatch" className="product-lab-gallery-image" />
+                  <img src={RD22Image.src} alt="Aurobond RD22 - Modified Resorcinol Formaldehyde Resin" className="product-lab-gallery-image" />
+                </div>
+                
+              ) 
+              : slug === 'peroxide-co-agent' ? (
                 <div className='gall_img'>
                   <img src={Img6860.src} alt="Peroxide Co Agent - Image 1" className="product-lab-gallery-image" />
                   {/* <img src={Img6866.src} alt="Peroxide Co Agent - Image 2" className="product-lab-gallery-image" /> */}
