@@ -35,7 +35,7 @@ export const plasticProducts = [
   { slug: 'plastic-peroxide-co-agent', name: 'Peroxide Co Agent', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452037/z_collage_with_border_o1cnx7.jpg', category: 'plastic' },
   { slug: 'processing-dispersing-additives', name: 'Processing & Dispersing Additives', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392864/unsplash_x8ZStukS2PM_9_zqbywg.svg', category: 'plastic' },
   { slug: 'plastic-antistatic-agent', name: 'Antistatic Agent', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452037/antistatic_agent_t36xro.jpg', category: 'plastic' },
-  { slug: 'anti-noise-additive', name: 'Anti Noise Additive', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1770017535/gg_ckfxpp.jpg', category: 'plastic' }
+  { slug: 'anti-noise-additive', name: 'Anti Noise Additive', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452037/antistatic_agent_t36xro.jpg', category: 'plastic' }
 ];
 
 export default function ProductsContent() {

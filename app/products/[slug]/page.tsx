@@ -580,7 +580,7 @@ export const productsData = {
   },
   'anti-noise-additive': {
     title: 'Anti Noise Additive',
-    image: "https://res.cloudinary.com/dgif730br/image/upload/v1770017535/gg_ckfxpp.jpg",
+    image: "https://res.cloudinary.com/dgif730br/image/upload/v1763452037/antistatic_agent_t36xro.jpg",
     description: 'Anti-noise additives are specialized compounds designed to reduce noise and vibration in plastic products, improving acoustic performance and user comfort.',
     advantages: [
       'Reduces noise and vibration in plastic components',
