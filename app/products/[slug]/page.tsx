@@ -1,6 +1,6 @@
 'use client';
 
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -49,7 +49,7 @@ import ibn6 from '../../images/96MB.jpeg';
 // Sample product data - in a real app, this would come from a database or API
 export const productsData = {
   'single-component-bonding-agent': {
-    title: 'Single Component Bonding Agent',
+    title: 'Resorcinol free Single Component Bonding Agent',
     image: Img825.src,
     description: 'AUROBOND 825 provides excellent improvement in adhesion value between fabric and coated steel cord (brass coated) with rubber compound against conventional two-component bonding systems.',
     // specification: 'Auroband-833 provides excellent improvement of adhesion value between fabric and rubber material with rubber compound against unprotected thin component systems (Monofilament and Cordboad).',
@@ -62,9 +62,21 @@ export const productsData = {
       'Better adhesion properties with compound'
     ]
   },
+  'resorcinol-masterbatch': {
+    title: 'Resorcinol Masterbatch',
+    image: "https://res.cloudinary.com/dgif730br/image/upload/v1770016055/R_80_S.0103c49e_qal2bm.jpg",
+    redirectTo: 'two-component-bonding-agent',
+    description: 'Resorcinol Masterbatch for improved adhesion in rubber compounds.'
+  },
+  'rfl-dipping': {
+    title: 'RFL Dipping',
+    image: "https://res.cloudinary.com/dgif730br/image/upload/v1770016424/WhatsApp_Image_2026-01-28_at_5.56.45_PM_w3smtj_xjk4bf.jpg",
+    redirectTo: 'two-component-bonding-agent',
+    description: 'RFL Dipping for improved adhesion in rubber compounds.'
+  },
   'two-component-bonding-agent': {
     title: 'Two Component Bonding Agent',
-    image: "https://res.cloudinary.com/dgif730br/image/upload/v1769665314/WhatsApp_Image_2026-01-28_at_5.56.45_PM_w3smtj.jpg",
+    image: "https://res.cloudinary.com/dgif730br/image/upload/v1770016896/RD_20.08d45bb1_mctdfz.jpg",
     advantageGroups: [
       {
         heading: 'Modified Resorcinol Component',
@@ -558,19 +570,29 @@ export const productsData = {
   },
   'plastic-antistatic-agent': {
     title: 'Antistatic Agent',
-    subheading: 'Auroaid AS 355',
-    image: 'https://res.cloudinary.com/dgif730br/image/upload/v1768370300/SD_255_ycygoi.jpg',
-    description: 'Auroaid AS 355 eliminates static electric charge on the surface of finished products. The static electricity needs to be dissipated to avoid problems such as sparking or dust accumulation.',
+    image: ibn2.src,
+    description: 'Antistatic agents are additives that can be added to polymers to reduce the build-up of static electricity.',
     advantages: [
       'Minimizes risk of static electric charge that may cause fire or explosion',
       'Reduces dust accumulation that affects performance and appearance of the products',
       'Offers improved flow and lubricating properties and easy release'
     ]
+  },
+  'anti-noise-additive': {
+    title: 'Anti Noise Additive',
+    image: "https://res.cloudinary.com/dgif730br/image/upload/v1770017535/gg_ckfxpp.jpg",
+    description: 'Anti-noise additives are specialized compounds designed to reduce noise and vibration in plastic products, improving acoustic performance and user comfort.',
+    advantages: [
+      'Reduces noise and vibration in plastic components',
+      'Improves acoustic performance in automotive and consumer applications',
+      'Enhances user comfort and product experience',
+      'Maintains mechanical properties while reducing noise'
+    ]
   }
 };
 
 const rubberProducts = [
-  { slug: 'single-component-bonding-agent', name: 'Single Component Bonding Agent', category: 'rubber' },
+  { slug: 'single-component-bonding-agent', name: 'Resorcinol free Single Component Bonding Agent', category: 'rubber' },
   { slug: 'two-component-bonding-agent', name: 'Two Component Bonding Agent', category: 'rubber' },
   { slug: 'peroxide-co-agent', name: 'Peroxide Co Agent', category: 'rubber' },
   { slug: 'antisticking-agent', name: 'Antisticking Agent', category: 'rubber' },
@@ -598,16 +620,30 @@ const plasticProducts = [
   { slug: 'plastic-flame-retardants', name: 'Flame Retardants', category: 'plastic' },
   { slug: 'plastic-peroxide-co-agent', name: 'Peroxide Co Agent', category: 'plastic' },
   { slug: 'processing-dispersing-additives', name: 'Processing & Dispersing Additives', category: 'plastic' },
-  { slug: 'plastic-antistatic-agent', name: 'Antistatic Agent', category: 'plastic' }
+  { slug: 'plastic-antistatic-agent', name: 'Antistatic Agent', category: 'plastic' },
+  { slug: 'anti-noise-additive', name: 'Anti Noise Additive', category: 'plastic' }
 ];
 
 export default function ProductDetailPage() {
   const params = useParams();
+  const router = useRouter();
   const slug = params.slug as string;
   const product = productsData[slug as keyof typeof productsData];
 
   if (!product) {
     return <div>Product not found</div>;
+  }
+
+  // Handle redirection for Resorcinol Masterbatch
+  if (slug === 'resorcinol-masterbatch' && product.redirectTo) {
+    router.push(`/products/${product.redirectTo}`);
+    return <div>Redirecting...</div>;
+  }
+
+  // Handle redirection for RFL Dipping
+  if (slug === 'rfl-dipping' && product.redirectTo) {
+    router.push(`/products/${product.redirectTo}`);
+    return <div>Redirecting...</div>;
   }
 
   // Detect category based on slug
@@ -796,6 +832,16 @@ export default function ProductDetailPage() {
                     {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
                 </div>
               )
+              : slug === 'anti-noise-additive' ? (
+                <div className='gall_img'>
+                  {/* <img src={Img202_1.src} alt="Tackifying Agent - 202" className="product-lab-gallery-image" /> */}
+                  <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1770017535/gg_ckfxpp.jpg"} alt="Tackifying Agent - 202" className="product-lab-gallery-image" />
+                  {/* <img src={Img209.src} alt="Tackifying Agent - 209" className="product-lab-gallery-image" /> */}
+                  {/* <img src={ImgBP205_1.src} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                    {/* <img src={"https://res.cloudinary.com/dgif730br/image/upload/v1769150911/WhatsApp_Image_2026-01-22_at_3.11.07_PM_4_tmuklj.jpg"} alt="Tackifying Agent - BP 205" className="product-lab-gallery-image" /> */}
+                </div>
+              )
+              
               : slug === 'dispersing-processing-additives' ? (
                 <div className='gall_img'>
                   <img src={Img212.src} alt="Dispersing & Processing Additives - 212" className="product-lab-gallery-image" />

@@ -420,7 +420,7 @@ export default function Home() {
             {/* Slide 1 */}
             <section className="hero-section her-sec11">
               <div className="hero-container">
-                <p className="hero-sky-label">Rubber Chemicals</p>
+                {/* <p className="hero-sky-label">Rubber Chemicals</p> */}
                 <div className="hero-content hero_con11">
                   <div className="hero-content-split">
                     <div className="hero-content-left">
