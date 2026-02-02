@@ -15,7 +15,7 @@ export const rubberProducts = [
   { slug: 'homogenizing-agent', name: 'Homogenizing Agent', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392803/unsplash_x8ZStukS2PM_6_f9uw5k.svg', category: 'rubber' },
   { slug: 'anti-abrasion', name: 'Anti-Abrasion Additive', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392803/unsplash_x8ZStukS2PM_7_jnqkaw.svg', category: 'rubber' },
   { slug: 'flame', name: 'Flame Retardants', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392802/unsplash_x8ZStukS2PM_8_mrdg6d.svg', category: 'rubber' },
-  { slug: 'dispersing-processing-additives', name: 'Dispersing & Processing Additives', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1770017910/WhatsApp_Image_2026-02-02_at_12.21.56_PM_radcw4.jpg', category: 'rubber' },
+  { slug: 'dispersing-processing-additives', name: 'Dispersing & Processing Additives', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392864/unsplash_x8ZStukS2PM_9_zqbywg.svg', category: 'rubber' },
   { slug: 'desiccant-agent-silica', name: 'Dispersing Agent for Silica', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392866/unsplash_x8ZStukS2PM_10_urq8xs.svg', category: 'rubber' },
   { slug: 'desiccant-rubber', name: 'Desiccant for Rubber', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392863/unsplash_x8ZStukS2PM_11_joqvsp.svg', category: 'rubber' },
   { slug: 'antistatic-agent', name: 'Antistatic Agent', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392862/unsplash_x8ZStukS2PM_12_zhr7mu.svg', category: 'rubber' },
@@ -33,7 +33,7 @@ export const plasticProducts = [
   { slug: 'plastic-anti-abrasion', name: 'Anti-Abrasion Additives', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452038/antiabbrasion_k7esih.jpg', category: 'plastic' },
   { slug: 'plastic-flame-retardants', name: 'Flame Retardants', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452038/product-pic12-big_tovbya.jpg', category: 'plastic' },
   { slug: 'plastic-peroxide-co-agent', name: 'Peroxide Co Agent', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452037/z_collage_with_border_o1cnx7.jpg', category: 'plastic' },
-  { slug: 'processing-dispersing-additives', name: 'Processing & Dispersing Additives', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763392864/unsplash_x8ZStukS2PM_9_zqbywg.svg', category: 'plastic' },
+  { slug: 'processing-dispersing-additives', name: 'Processing & Dispersing Additives', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1770017910/WhatsApp_Image_2026-02-02_at_12.21.56_PM_radcw4.jpg', category: 'plastic' },
   { slug: 'plastic-antistatic-agent', name: 'Antistatic Agent', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452037/antistatic_agent_t36xro.jpg', category: 'plastic' },
   { slug: 'anti-noise-additive', name: 'Anti Noise Additive', image: 'https://res.cloudinary.com/dgif730br/image/upload/v1763452037/antistatic_agent_t36xro.jpg', category: 'plastic' }
 ];

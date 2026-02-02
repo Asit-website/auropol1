@@ -1131,7 +1131,11 @@ export default function ProductDetailPage() {
               <div className="product-detail-section product-brochure-download">
                 <h2 className="product-section-heading">Brochure</h2>
                 <div className="brochure-download-card">
-                  <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763212838/rubber-brochure_1_ouijmg.svg" alt="Brochure" />
+                  {applicationText === 'plastic' ? (
+                    <img src="https://res.cloudinary.com/dgif730br/image/upload/v1770024779/Screenshot_7865_byhtgg.png" alt="Plastic Brochure" />
+                  ) : (
+                    <img src="https://res.cloudinary.com/dgif730br/image/upload/v1770024935/Screenshot_7867_l8dyja.png" alt="Rubber Brochure" />
+                  )}
                   <div className="brochure-download-content">
                     <h3>High Quality Solutions for {applicationText === 'plastic' ? 'Plastic' : 'Rubber'} Processing</h3>
                     <button className="btn-download">
