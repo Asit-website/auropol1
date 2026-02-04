@@ -570,7 +570,7 @@ export default function Home() {
 
             {/* Certification Logos */}
             <div className="quality-logos">
-              <img src="https://res.cloudinary.com/dgif730br/image/upload/v1768373550/image_328_qfl0js.svg" alt="ISO Certification" />
+              <img src="https://res.cloudinary.com/dgif730br/image/upload/v1770212396/ISO-9001-ISO-14001_en_regular-RGB-_LOGO_ghrn03.jpg" alt="ISO Certification" />
               <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_329_cxr9t1.png" alt="ZED Certification" />
             </div>
 

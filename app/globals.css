@@ -2945,7 +2945,8 @@ body {
 /* Right Side - Teal Background */
 .footer-right {
   flex: 0 0 67%;
-  background: #105B4E;
+  /* background: #105B4E; */
+  background: #2B9098;
   padding: 60px 40px 40px;
   color: white;
 }
@@ -3140,7 +3141,8 @@ body {
 
 /* Footer Bottom */
 .footer-bottom {
-  background: #105B4E;
+  /* background: #105B4E; */
+  background: #2B9098;
   padding: 24px 80px;
   display: flex;
   justify-content: space-between;
