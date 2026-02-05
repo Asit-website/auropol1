@@ -12,6 +12,7 @@ export default function EnquiryPage() {
     designation: '',
     companyName: '',
     address: '',
+    country: '',
     email: '',
     phone: '',
     rubberChemicals: false,
@@ -194,6 +195,18 @@ export default function EnquiryPage() {
                 name="address"
                 placeholder="Address"
                 value={formData.address}
+                onChange={handleChange}
+                className="form-input"
+              />
+            </div>
+
+            {/* Country */}
+            <div className="form-group">
+              <input
+                type="text"
+                name="country"
+                placeholder="Country"
+                value={formData.country}
                 onChange={handleChange}
                 className="form-input"
               />

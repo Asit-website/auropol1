@@ -26,7 +26,7 @@ export default function RDTechnologyPage() {
           {/* Left Side - R&D Innovation */}
           <div className="rd-innovation-card">
             <h1 className="rd-main-title">
-              <span className="title-teal">R & D AND</span>
+              <span className="title-teal">R&D AND</span>
               <br />
               <span className="title-black">INNOVATION</span>
             </h1>
@@ -64,7 +64,7 @@ export default function RDTechnologyPage() {
               <div className="rd-certifications-section">
                 <div className="rd-certifications-grid">
                   <div className="certification-card">
-                    <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_328_cmfdmq.png" alt="ISO Certification" />
+                    <img src="https://res.cloudinary.com/dgif730br/image/upload/v1770212396/ISO-9001-ISO-14001_en_regular-RGB-_LOGO_ghrn03.jpg" alt="ISO Certification" />
                   </div>
                   <div className="certification-card">
                     <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_329_cxr9t1.png" alt="Quality Certification" />

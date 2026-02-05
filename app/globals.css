@@ -1885,7 +1885,7 @@ body {
 
 .about-content-panel {
   flex: 0.6;
-  background: #105B4E;
+  background: #2b9098;
   padding: 80px 60px;
   display: flex;
   flex-direction: column;
@@ -4250,7 +4250,7 @@ body {
 
 .careers-hero {
   position: relative;
-  background: url('https://res.cloudinary.com/dgif730br/image/upload/v1769839466/WhatsApp_Image_2026-01-30_at_9.51.20_PM_pa6rkj.jpg') center/cover no-repeat;
+  background: url('https://res.cloudinary.com/dgif730br/image/upload/v1770275659/WhatsApp_Image_2026-02-04_at_9.48.44_PM_pjucgn.jpg') center/cover no-repeat;
   min-height: 160px;
   display: flex;
   flex-direction: column;

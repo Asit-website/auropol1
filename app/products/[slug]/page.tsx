@@ -1138,12 +1138,12 @@ export default function ProductDetailPage() {
                   )}
                   <div className="brochure-download-content">
                     <h3>High Quality Solutions for {applicationText === 'plastic' ? 'Plastic' : 'Rubber'} Processing</h3>
-                    <button className="btn-download">
+                    <Link href={"/enquiry"}><button className="btn-download">
                       Download Brochure
                       <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56" />
                       </svg>
-                    </button>
+                    </button></Link>
                   </div>
                 </div>
               </div>

@@ -85,8 +85,9 @@ export default function CareersPage() {
           {/* Right Side - Image & Openings */}
           <div className="careers-openings-card">
             <div className="careers-image-wrapper">
+              {/* https://res.cloudinary.com/dgif730br/image/upload/v1763191434/image_370_lyuvme.svg */}
               <img 
-                src="https://res.cloudinary.com/dgif730br/image/upload/v1763191434/image_370_lyuvme.svg" 
+                src="https://res.cloudinary.com/dgif730br/image/upload/v1770275659/WhatsApp_Image_2026-02-04_at_9.48.44_PM_pjucgn.jpg" 
                 alt="Laboratory Equipment" 
                 className="careers-main-image"
               />

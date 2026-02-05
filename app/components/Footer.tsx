@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
           
           <div className="footer-certifications">
-            <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_328_cmfdmq.png" alt="ISO Certification" />
+            <img src="https://res.cloudinary.com/dgif730br/image/upload/v1770212396/ISO-9001-ISO-14001_en_regular-RGB-_LOGO_ghrn03.jpg" alt="ISO Certification" />
             <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_329_cxr9t1.png" alt="Zeq Certification" />
             {/* <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_329_cxr9t1.png" alt="Other Certification" /> */}
           </div>
