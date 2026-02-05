@@ -3176,9 +3176,19 @@ body {
 /* Product Hero Section */
 .product-hero {
   position: relative;
-  background: url('https://res.cloudinary.com/dgif730br/image/upload/v1769839466/WhatsApp_Image_2026-01-30_at_9.51.20_PM_pa6rkj.jpg') center/cover no-repeat;
   min-height: 300px;
   margin-top: 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-hero-rubber {
+  background-image: url('https://res.cloudinary.com/dgif730br/image/upload/v1769839466/WhatsApp_Image_2026-01-30_at_9.51.20_PM_pa6rkj.jpg');
+}
+
+.product-hero-plastic {
+  background-image: url('https://res.cloudinary.com/dgif730br/image/upload/v1770276863/WhatsApp_Image_2026-02-05_at_1.01.44_PM_jfilhv.jpg');
 }
 
 .product-hero-overlay {
@@ -4063,7 +4073,7 @@ body {
 }
 
 .product-list-items li.active a {
-  background: #105B4E;
+  background: #2b9098;
   color: white;
   font-weight: 600;
 }

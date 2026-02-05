@@ -51,7 +51,7 @@ export default function ProductsContent() {
   return (
     <>
       {/* Hero Banner Section */}
-      <section className="product-hero">
+      <section className={`product-hero product-hero-${category}`}>
         <div className="product-hero-overlay"></div>
       </section>
 
